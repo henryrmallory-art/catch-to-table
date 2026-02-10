@@ -33,8 +33,12 @@ export async function POST(request: NextRequest) {
     )
 
     return NextResponse.json({ suggestions: matchedSuggestions })
-  } catch (error) {
+  } catch (error: any) {
     console.error('Fish identification error:', error)
-    return NextResponse.json({ error: 'Identification failed' }, { status: 500 })
+    console.error('Error details:', error.message, error.stack)
+    return NextResponse.json({
+      error: 'Identification failed',
+      details: error.message || String(error)
+    }, { status: 500 })
   }
 }
