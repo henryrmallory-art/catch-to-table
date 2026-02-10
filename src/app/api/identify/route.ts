@@ -10,8 +10,12 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'No image provided' }, { status: 400 })
     }
 
+    console.log('Received image, length:', imageBase64.length)
+    console.log('API Key present:', !!process.env.ANTHROPIC_API_KEY)
+
     // 1. Get AI identification
     const aiResult = await identifyFish(imageBase64)
+    console.log('AI identification successful:', aiResult)
 
     // 2. Match against our species database
     const supabase = await createServerSupabase()

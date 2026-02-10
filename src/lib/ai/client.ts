@@ -12,19 +12,21 @@ export async function identifyFish(imageBase64: string): Promise<{
     keyFeatures: string[]
   }>
 }> {
-  const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-5-20250929',
-    max_tokens: 1024,
-    messages: [{
-      role: 'user',
-      content: [
-        {
-          type: 'image',
-          source: { type: 'base64', media_type: 'image/jpeg', data: imageBase64 }
-        },
-        {
-          type: 'text',
-          text: `You are a marine biologist and expert fish identifier. Analyze this fish photo and return your top 3 species identifications.
+  try {
+    console.log('Calling Anthropic API with model: claude-sonnet-4-5-20250929')
+    const response = await anthropic.messages.create({
+      model: 'claude-sonnet-4-5-20250929',
+      max_tokens: 1024,
+      messages: [{
+        role: 'user',
+        content: [
+          {
+            type: 'image',
+            source: { type: 'base64', media_type: 'image/jpeg', data: imageBase64 }
+          },
+          {
+            type: 'text',
+            text: `You are a marine biologist and expert fish identifier. Analyze this fish photo and return your top 3 species identifications.
 
 Return ONLY valid JSON in this exact format (no markdown, no backticks):
 {
@@ -39,13 +41,21 @@ Return ONLY valid JSON in this exact format (no markdown, no backticks):
 }
 
 Consider: body shape, coloring, fin structure, mouth shape, markings, and any visible habitat context. If the image is unclear or not a fish, return confidence below 0.3.`
-        }
-      ]
-    }]
-  })
+          }
+        ]
+      }]
+    })
 
-  const text = response.content[0].type === 'text' ? response.content[0].text : ''
-  return JSON.parse(text.replace(/```json|```/g, '').trim())
+    console.log('Anthropic API response received')
+    const text = response.content[0].type === 'text' ? response.content[0].text : ''
+    console.log('Response text:', text.substring(0, 200))
+    return JSON.parse(text.replace(/```json|```/g, '').trim())
+  } catch (error: any) {
+    console.error('Anthropic API error:', error)
+    console.error('Error status:', error.status)
+    console.error('Error message:', error.message)
+    throw error
+  }
 }
 
 export async function generateRecipe(speciesName: string, flavorProfile: string, method: string): Promise<{
