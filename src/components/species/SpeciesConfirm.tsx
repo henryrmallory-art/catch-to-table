@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { useCatchStore } from '@/lib/stores/catchStore'
 import { formatConfidence } from '@/lib/utils/format'
-import { Check, AlertCircle, Loader2 } from 'lucide-react'
+import { Check, AlertCircle, Loader2, Edit3 } from 'lucide-react'
 
 export function SpeciesConfirm() {
   const {
@@ -19,6 +19,9 @@ export function SpeciesConfirm() {
   } = useCatchStore()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [manualEntry, setManualEntry] = useState(false)
+  const [manualName, setManualName] = useState('')
+  const [manualLength, setManualLength] = useState('')
 
   useEffect(() => {
     if (photoBase64 && speciesSuggestions.length === 0) {
@@ -33,21 +36,29 @@ export function SpeciesConfirm() {
     setError(null)
 
     try {
+      console.log('Sending identification request, image length:', photoBase64.length)
+
       const response = await fetch('/api/identify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ imageBase64: photoBase64 }),
       })
 
+      console.log('Response status:', response.status)
+
       if (!response.ok) {
-        throw new Error('Failed to identify fish')
+        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }))
+        console.error('API error:', errorData)
+        throw new Error(errorData.details || errorData.error || 'Failed to identify fish')
       }
 
       const data = await response.json()
+      console.log('Identification successful:', data)
       setSuggestions(data.suggestions)
-    } catch (err) {
-      setError('Failed to identify fish. Please try again.')
-      console.error(err)
+    } catch (err: any) {
+      const errorMessage = err.message || 'Failed to identify fish. Please try again.'
+      setError(errorMessage)
+      console.error('Identification error:', err)
     } finally {
       setLoading(false)
     }
@@ -61,6 +72,56 @@ export function SpeciesConfirm() {
 
     confirmSpecies(suggestion.speciesId, suggestion.commonName)
     setStep('legality')
+  }
+
+  async function handleManualEntry() {
+    if (!manualName.trim()) {
+      setError('Please enter a fish name')
+      return
+    }
+
+    setLoading(true)
+    setError(null)
+
+    try {
+      // Try to find species in database
+      const response = await fetch('/api/species/search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: manualName }),
+      })
+
+      if (response.ok) {
+        const data = await response.json()
+        if (data.species) {
+          confirmSpecies(data.species.id, data.species.common_name)
+          if (manualLength) {
+            const length = parseFloat(manualLength)
+            if (!isNaN(length)) {
+              useCatchStore.getState().setMeasurement(length, 'manual')
+            }
+          }
+          setStep('legality')
+          return
+        }
+      }
+
+      // Species not found, but allow proceeding with manual entry
+      alert(`"${manualName}" not found in our database. You can still check general regulations, but species-specific rules may not be available.`)
+      confirmSpecies('manual', manualName)
+      if (manualLength) {
+        const length = parseFloat(manualLength)
+        if (!isNaN(length)) {
+          useCatchStore.getState().setMeasurement(length, 'manual')
+        }
+      }
+      setStep('legality')
+    } catch (err: any) {
+      setError('Failed to search species. Please try again.')
+      console.error(err)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -162,13 +223,89 @@ export function SpeciesConfirm() {
           </div>
         )}
 
-        <Button
-          variant="outline"
-          className="w-full border-slate-700"
-          onClick={() => setStep('camera')}
-        >
-          None of these - Take Another Photo
-        </Button>
+        {!manualEntry && (
+          <>
+            <Button
+              variant="outline"
+              className="w-full border-slate-700"
+              onClick={() => setManualEntry(true)}
+            >
+              <Edit3 className="h-4 w-4 mr-2" />
+              Enter Manually
+            </Button>
+
+            <Button
+              variant="outline"
+              className="w-full border-slate-700"
+              onClick={() => setStep('camera')}
+            >
+              Take Another Photo
+            </Button>
+          </>
+        )}
+
+        {manualEntry && (
+          <Card className="border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white mb-4">Manual Entry</h3>
+
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-slate-300 mb-2">
+                  Fish Name *
+                </label>
+                <input
+                  type="text"
+                  value={manualName}
+                  onChange={(e) => setManualName(e.target.value)}
+                  placeholder="e.g., Red Snapper, Bass"
+                  className="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-300 mb-2">
+                  Length (inches, optional)
+                </label>
+                <input
+                  type="number"
+                  value={manualLength}
+                  onChange={(e) => setManualLength(e.target.value)}
+                  placeholder="e.g., 18"
+                  step="0.1"
+                  className="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                />
+              </div>
+
+              <div className="flex gap-3">
+                <Button
+                  onClick={handleManualEntry}
+                  disabled={loading}
+                  className="flex-1"
+                >
+                  {loading ? (
+                    <>
+                      <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                      Checking...
+                    </>
+                  ) : (
+                    'Continue'
+                  )}
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={() => {
+                    setManualEntry(false)
+                    setManualName('')
+                    setManualLength('')
+                  }}
+                  disabled={loading}
+                >
+                  Cancel
+                </Button>
+              </div>
+            </div>
+          </Card>
+        )}
       </div>
     </div>
   )

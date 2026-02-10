@@ -53,15 +53,32 @@ export function CameraCapture() {
     if (!videoRef.current) return
 
     const canvas = document.createElement('canvas')
-    canvas.width = videoRef.current.videoWidth
-    canvas.height = videoRef.current.videoHeight
+
+    // Limit resolution to 1920x1080 max to prevent huge base64 strings
+    const maxWidth = 1920
+    const maxHeight = 1080
+    const videoWidth = videoRef.current.videoWidth
+    const videoHeight = videoRef.current.videoHeight
+
+    let width = videoWidth
+    let height = videoHeight
+
+    if (width > maxWidth || height > maxHeight) {
+      const ratio = Math.min(maxWidth / width, maxHeight / height)
+      width = width * ratio
+      height = height * ratio
+    }
+
+    canvas.width = width
+    canvas.height = height
     const ctx = canvas.getContext('2d')
 
     if (ctx) {
-      ctx.drawImage(videoRef.current, 0, 0)
-      const base64 = canvas.toDataURL('image/jpeg', 0.8).split(',')[1]
-      const dataUrl = canvas.toDataURL('image/jpeg', 0.8)
+      ctx.drawImage(videoRef.current, 0, 0, width, height)
+      const base64 = canvas.toDataURL('image/jpeg', 0.7).split(',')[1]
+      const dataUrl = canvas.toDataURL('image/jpeg', 0.7)
 
+      console.log('Captured photo, base64 length:', base64.length)
       setPhoto(base64, dataUrl)
       setStep('species')
 
@@ -122,13 +139,37 @@ export function CameraCapture() {
             onChange={async (e) => {
               const file = e.target.files?.[0]
               if (file) {
-                const reader = new FileReader()
-                reader.onloadend = () => {
-                  const base64 = (reader.result as string).split(',')[1]
-                  setPhoto(base64, reader.result as string)
-                  setStep('species')
+                // Compress image before sending
+                const img = new Image()
+                img.onload = () => {
+                  const canvas = document.createElement('canvas')
+
+                  // Limit resolution
+                  const maxWidth = 1920
+                  const maxHeight = 1080
+                  let width = img.width
+                  let height = img.height
+
+                  if (width > maxWidth || height > maxHeight) {
+                    const ratio = Math.min(maxWidth / width, maxHeight / height)
+                    width = width * ratio
+                    height = height * ratio
+                  }
+
+                  canvas.width = width
+                  canvas.height = height
+                  const ctx = canvas.getContext('2d')
+
+                  if (ctx) {
+                    ctx.drawImage(img, 0, 0, width, height)
+                    const dataUrl = canvas.toDataURL('image/jpeg', 0.7)
+                    const base64 = dataUrl.split(',')[1]
+                    console.log('Uploaded photo, base64 length:', base64.length)
+                    setPhoto(base64, dataUrl)
+                    setStep('species')
+                  }
                 }
-                reader.readAsDataURL(file)
+                img.src = URL.createObjectURL(file)
               }
             }}
           />
