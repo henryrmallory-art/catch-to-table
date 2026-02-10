@@ -29,6 +29,7 @@ interface CatchState {
     confidence: number
     keyFeatures: string[]
     speciesId?: string
+    dbMatch?: any
   }>
   confirmedSpecies: string | null // species ID
   confirmedSpeciesName: string | null
@@ -40,6 +41,8 @@ interface CatchState {
     canKeep: boolean
     reasons: string[]
     regulation: any
+    jurisdiction?: any
+    regulations?: any[]
   } | null
   setLegality: (result: any) => void
 
