@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createServerSupabase } from '@/lib/supabase/server'
-import { generateRecipe } from '@/lib/anthropic/client'
+import { generateRecipe } from '@/lib/ai/client'
 
 export async function POST(request: NextRequest) {
   try {

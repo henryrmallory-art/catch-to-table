@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { identifyFish } from '@/lib/anthropic/client'
+import { identifyFish } from '@/lib/ai/client'
 import { createServerSupabase } from '@/lib/supabase/server'
 
 export async function POST(request: NextRequest) {
