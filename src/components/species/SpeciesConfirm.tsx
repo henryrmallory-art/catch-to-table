@@ -70,6 +70,25 @@ export function SpeciesConfirm() {
       return
     }
 
+    // "Not Sure" mode - low confidence warning
+    if (suggestion.confidence < 0.7) {
+      const proceed = confirm(
+        `⚠️ LOW CONFIDENCE (${Math.round(suggestion.confidence * 100)}%)\n\n` +
+        `We're not very confident about this identification. ` +
+        `When in doubt, it's best to RELEASE the fish to protect the species.\n\n` +
+        `Do you want to continue with "${suggestion.commonName}"?\n\n` +
+        `✓ YES - Check regulations but consider releasing\n` +
+        `✗ NO - Try manual entry or take another photo`
+      )
+
+      if (!proceed) {
+        return
+      }
+
+      // Store low confidence flag for later display
+      useCatchStore.getState().lowConfidenceWarning = true
+    }
+
     confirmSpecies(suggestion.speciesId, suggestion.commonName)
     setStep('legality')
   }
