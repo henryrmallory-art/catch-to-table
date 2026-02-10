@@ -5,8 +5,9 @@ import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { useCatchStore } from '@/lib/stores/catchStore'
+import { useBagStore } from '@/lib/stores/bagStore'
 import { formatDate } from '@/lib/utils/format'
-import { ThumbsUp, ThumbsDown, Loader2, ExternalLink, Info } from 'lucide-react'
+import { ThumbsUp, ThumbsDown, Loader2, ExternalLink, Info, AlertTriangle } from 'lucide-react'
 
 export function LegalityCard() {
   const {
@@ -21,7 +22,15 @@ export function LegalityCard() {
     setDecision,
     setStep,
   } = useCatchStore()
+  const { addCatch, getKeptCountBySpecies, crewSize } = useBagStore()
   const [loading, setLoading] = useState(false)
+
+  // Calculate bag limit warning
+  const keptCount = confirmedSpecies ? getKeptCountBySpecies(confirmedSpecies) : 0
+  const primaryReg = legalityResult?.regulations?.[0]?.regulation
+  const bagLimit = primaryReg?.bag_limit_per_person
+  const isNearLimit = bagLimit && keptCount >= bagLimit - 1
+  const isAtLimit = bagLimit && keptCount >= bagLimit
 
   useEffect(() => {
     if (confirmedSpecies && latitude && longitude && !legalityResult) {
@@ -222,11 +231,38 @@ export function LegalityCard() {
             </Button>
           )}
 
+          {/* Bag Limit Warning */}
+          {isNearLimit && !isAtLimit && (
+            <Card className="border-amber-500 bg-amber-950/20 p-4">
+              <div className="flex items-center gap-2">
+                <Info className="h-5 w-5 text-amber-500 flex-shrink-0" />
+                <p className="text-amber-200 text-sm">
+                  Warning: You've kept {keptCount}/{bagLimit} {confirmedSpeciesName} today
+                </p>
+              </div>
+            </Card>
+          )}
+
+          {isAtLimit && (
+            <Card className="border-rose-500 bg-rose-950/20 p-4">
+              <div className="flex items-center gap-2">
+                <AlertTriangle className="h-5 w-5 text-rose-500 flex-shrink-0" />
+                <p className="text-rose-200 text-sm font-medium">
+                  BAG LIMIT REACHED: {keptCount}/{bagLimit} {confirmedSpeciesName}
+                </p>
+              </div>
+            </Card>
+          )}
+
           <div className="grid grid-cols-2 gap-3">
             <Button
               variant="outline"
               className="border-rose-500 text-rose-400 hover:bg-rose-950"
               onClick={() => {
+                // Add to bag tracker
+                if (confirmedSpecies && confirmedSpeciesName) {
+                  addCatch(confirmedSpecies, confirmedSpeciesName, measuredLength, false)
+                }
                 setDecision('release')
                 setStep('handling')
               }}
@@ -235,13 +271,23 @@ export function LegalityCard() {
             </Button>
             <Button
               className="bg-emerald-600 hover:bg-emerald-700 text-white"
-              disabled={!canKeep}
+              disabled={!canKeep || isAtLimit}
               onClick={() => {
+                // Check bag limit
+                if (isAtLimit) {
+                  alert(`You've reached your bag limit for ${confirmedSpeciesName} (${bagLimit} per person)`)
+                  return
+                }
+
+                // Add to bag tracker
+                if (confirmedSpecies && confirmedSpeciesName) {
+                  addCatch(confirmedSpecies, confirmedSpeciesName, measuredLength, true)
+                }
                 setDecision('keep')
                 setStep('handling')
               }}
             >
-              I'll Keep
+              I'll Keep {isAtLimit && '(LIMIT REACHED)'}
             </Button>
           </div>
         </div>
