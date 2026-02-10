@@ -13,7 +13,7 @@ export async function identifyFish(imageBase64: string): Promise<{
   }>
 }> {
   const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-20250514',
+    model: 'claude-sonnet-4-5-20250929',
     max_tokens: 1024,
     messages: [{
       role: 'user',
@@ -55,7 +55,7 @@ export async function generateRecipe(speciesName: string, flavorProfile: string,
   cookTime: number
 }> {
   const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-20250514',
+    model: 'claude-sonnet-4-5-20250929',
     max_tokens: 512,
     messages: [{
       role: 'user',
