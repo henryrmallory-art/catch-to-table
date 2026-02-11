@@ -1,0 +1,1448 @@
+{
+  "metadata": {
+    "region": "Mid-Atlantic United States",
+    "states": ["New York", "New Jersey", "Pennsylvania", "Delaware", "Maryland"],
+    "last_updated": "2026-02-10",
+    "data_sources": [
+      "New York Department of Environmental Conservation (NYSDEC)",
+      "New Jersey Department of Environmental Protection Fish & Wildlife",
+      "Pennsylvania Fish and Boat Commission",
+      "Delaware Division of Fish and Wildlife (DNREC)",
+      "Maryland Department of Natural Resources (DNR)",
+      "NOAA Fisheries"
+    ],
+    "notes": "Regulations are subject to change. Always verify current regulations with state agencies before fishing. Some waters may have special regulations that differ from statewide rules."
+  },
+  "regulations": {
+    "new_york": {
+      "state_name": "New York",
+      "agency": "New York Department of Environmental Conservation (NYSDEC)",
+      "agency_url": "https://dec.ny.gov",
+      "freshwater": {
+        "largemouth_bass": {
+          "common_name": "Largemouth Bass",
+          "scientific_name": "Micropterus salmoides",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Statewide regulations. Check for special regulations on specific waters."
+        },
+        "smallmouth_bass": {
+          "common_name": "Smallmouth Bass",
+          "scientific_name": "Micropterus dolomieu",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Statewide regulations. Check for special regulations on specific waters."
+        },
+        "walleye": {
+          "common_name": "Walleye",
+          "scientific_name": "Sander vitreus",
+          "season": "Opens May 1",
+          "min_size_inches": 15,
+          "max_size_inches": null,
+          "bag_limit": 3,
+          "notes": "Fixed season opener of May 1 statewide. Some waters may have different regulations."
+        },
+        "northern_pike": {
+          "common_name": "Northern Pike",
+          "scientific_name": "Esox lucius",
+          "season": "Opens May 1",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Fixed season opener of May 1 statewide."
+        },
+        "muskellunge": {
+          "common_name": "Muskellunge",
+          "scientific_name": "Esox masquinongy",
+          "season": "Year-round",
+          "min_size_inches": 40,
+          "max_size_inches": null,
+          "bag_limit": 1,
+          "notes": "Check specific waters for special regulations."
+        },
+        "chain_pickerel": {
+          "common_name": "Chain Pickerel",
+          "scientific_name": "Esox niger",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Statewide regulations."
+        },
+        "rainbow_trout": {
+          "common_name": "Rainbow Trout",
+          "scientific_name": "Oncorhynchus mykiss",
+          "season": "Year-round in lakes and ponds",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "No more than 2 fish longer than 12 inches. Stream regulations vary by location."
+        },
+        "brown_trout": {
+          "common_name": "Brown Trout",
+          "scientific_name": "Salmo trutta",
+          "season": "Year-round in lakes and ponds",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "No more than 2 fish longer than 12 inches. Stream regulations vary by location."
+        },
+        "brook_trout": {
+          "common_name": "Brook Trout",
+          "scientific_name": "Salvelinus fontinalis",
+          "season": "Year-round in lakes and ponds",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Stream regulations vary by location."
+        },
+        "yellow_perch": {
+          "common_name": "Yellow Perch",
+          "scientific_name": "Perca flavescens",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Statewide regulation."
+        },
+        "white_perch": {
+          "common_name": "White Perch",
+          "scientific_name": "Morone americana",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Statewide regulation."
+        },
+        "black_crappie": {
+          "common_name": "Black Crappie",
+          "scientific_name": "Pomoxis nigromaculatus",
+          "season": "Year-round",
+          "min_size_inches": 10,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Minimum size increased to 10 inches statewide."
+        },
+        "white_crappie": {
+          "common_name": "White Crappie",
+          "scientific_name": "Pomoxis annularis",
+          "season": "Year-round",
+          "min_size_inches": 10,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Minimum size increased to 10 inches statewide."
+        },
+        "bluegill": {
+          "common_name": "Bluegill",
+          "scientific_name": "Lepomis macrochirus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Daily limit reduced from 50 to 25. Some waters have 8-inch minimum with 15 fish limit."
+        },
+        "pumpkinseed": {
+          "common_name": "Pumpkinseed",
+          "scientific_name": "Lepomis gibbosus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Daily limit reduced from 50 to 25."
+        },
+        "redbreast_sunfish": {
+          "common_name": "Redbreast Sunfish",
+          "scientific_name": "Lepomis auritus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Daily limit reduced from 50 to 25."
+        },
+        "rock_bass": {
+          "common_name": "Rock Bass",
+          "scientific_name": "Ambloplites rupestris",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Statewide regulation."
+        },
+        "channel_catfish": {
+          "common_name": "Channel Catfish",
+          "scientific_name": "Ictalurus punctatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 10,
+          "notes": "Statewide regulation."
+        },
+        "brown_bullhead": {
+          "common_name": "Brown Bullhead",
+          "scientific_name": "Ameiurus nebulosus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined with other bullheads."
+        },
+        "yellow_bullhead": {
+          "common_name": "Yellow Bullhead",
+          "scientific_name": "Ameiurus natalis",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined with other bullheads."
+        }
+      },
+      "saltwater": {
+        "striped_bass": {
+          "common_name": "Striped Bass",
+          "scientific_name": "Morone saxatilis",
+          "season": "April 15 - December 15",
+          "min_size_inches": 28,
+          "max_size_inches": 35,
+          "bag_limit": 1,
+          "slot_limit": "28-35 inches",
+          "notes": "Non-offset circle hooks required when using bait. Check for area-specific closures."
+        },
+        "bluefish": {
+          "common_name": "Bluefish",
+          "scientific_name": "Pomatomus saltatrix",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Private anglers: 5 fish. For-hire: 7 fish (2026-2027)."
+        },
+        "summer_flounder": {
+          "common_name": "Summer Flounder (Fluke)",
+          "scientific_name": "Paralichthys dentatus",
+          "season": "May 4 - September 30",
+          "min_size_inches": 19,
+          "max_size_inches": null,
+          "bag_limit": 4,
+          "notes": "Regulations may vary by region (Hudson River, NY Bight, etc.)."
+        },
+        "winter_flounder": {
+          "common_name": "Winter Flounder",
+          "scientific_name": "Pseudopleuronectes americanus",
+          "season": "Varies by region",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 2,
+          "notes": "Check regional regulations."
+        },
+        "black_sea_bass": {
+          "common_name": "Black Sea Bass",
+          "scientific_name": "Centropristis striata",
+          "season": "June 23 - December 31",
+          "min_size_inches": 16.5,
+          "max_size_inches": null,
+          "bag_limit": 3,
+          "notes": "3 fish per day June 23-Aug 31, 6 fish per day Sept 1-Dec 31. 20% increase approved for 2026."
+        },
+        "scup": {
+          "common_name": "Scup (Porgy)",
+          "scientific_name": "Stenotomus chrysops",
+          "season": "May 1 - December 31",
+          "min_size_inches": 9.5,
+          "max_size_inches": null,
+          "bag_limit": 30,
+          "notes": "9.5 inches from shore, 10.5 inches from boat. Special limits for party/charter boats Sept 1-Oct 31."
+        },
+        "tautog": {
+          "common_name": "Tautog (Blackfish)",
+          "scientific_name": "Tautoga onitis",
+          "season": "Varies by region",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": "Varies by region and season",
+          "notes": "Different regulations for Long Island Sound Region and NY Bight Region. Check current regulations."
+        },
+        "weakfish": {
+          "common_name": "Weakfish",
+          "scientific_name": "Cynoscion regalis",
+          "season": "Year-round",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": 1,
+          "notes": "Conservation measures in place."
+        },
+        "atlantic_cod": {
+          "common_name": "Atlantic Cod",
+          "scientific_name": "Gadus morhua",
+          "season": "Varies",
+          "min_size_inches": 21,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Federal waters regulations apply. Check NOAA for current status."
+        },
+        "red_drum": {
+          "common_name": "Red Drum (Redfish)",
+          "scientific_name": "Sciaenops ocellatus",
+          "season": "Year-round",
+          "min_size_inches": 18,
+          "max_size_inches": 27,
+          "bag_limit": 1,
+          "slot_limit": "18-27 inches",
+          "notes": "Slot limit applies."
+        },
+        "atlantic_mackerel": {
+          "common_name": "Atlantic Mackerel",
+          "scientific_name": "Scomber scombrus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or bag limits."
+        }
+      }
+    },
+    "new_jersey": {
+      "state_name": "New Jersey",
+      "agency": "New Jersey Department of Environmental Protection - Division of Fish & Wildlife",
+      "agency_url": "https://dep.nj.gov/njfw",
+      "freshwater": {
+        "largemouth_bass": {
+          "common_name": "Largemouth Bass",
+          "scientific_name": "Micropterus salmoides",
+          "season": "Year-round; No harvest April 15 - June 15",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "All bass must be immediately returned to water during April 15-June 15 closed harvest season."
+        },
+        "smallmouth_bass": {
+          "common_name": "Smallmouth Bass",
+          "scientific_name": "Micropterus dolomieu",
+          "season": "Year-round; No harvest April 15 - June 15",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "All bass must be immediately returned to water during April 15-June 15 closed harvest season."
+        },
+        "rainbow_trout": {
+          "common_name": "Rainbow Trout",
+          "scientific_name": "Oncorhynchus mykiss",
+          "season": "April 5, 2025 - April 4, 2026",
+          "min_size_inches": 7,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "Trout season dates and limits vary by location. Check specific waters."
+        },
+        "brown_trout": {
+          "common_name": "Brown Trout",
+          "scientific_name": "Salmo trutta",
+          "season": "April 5, 2025 - April 4, 2026",
+          "min_size_inches": 7,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "Trout season dates and limits vary by location."
+        },
+        "brook_trout": {
+          "common_name": "Brook Trout",
+          "scientific_name": "Salvelinus fontinalis",
+          "season": "April 5, 2025 - April 4, 2026",
+          "min_size_inches": 7,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "Trout season dates and limits vary by location."
+        },
+        "chain_pickerel": {
+          "common_name": "Chain Pickerel",
+          "scientific_name": "Esox niger",
+          "season": "Year-round",
+          "min_size_inches": 15,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Statewide regulation."
+        },
+        "channel_catfish": {
+          "common_name": "Channel Catfish",
+          "scientific_name": "Ictalurus punctatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 10,
+          "notes": "No size restrictions."
+        },
+        "yellow_perch": {
+          "common_name": "Yellow Perch",
+          "scientific_name": "Perca flavescens",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Statewide regulation. Some waters may differ."
+        },
+        "white_perch": {
+          "common_name": "White Perch",
+          "scientific_name": "Morone americana",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Statewide regulation."
+        },
+        "black_crappie": {
+          "common_name": "Black Crappie",
+          "scientific_name": "Pomoxis nigromaculatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Combined crappie limit."
+        },
+        "white_crappie": {
+          "common_name": "White Crappie",
+          "scientific_name": "Pomoxis annularis",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Combined crappie limit."
+        },
+        "bluegill": {
+          "common_name": "Bluegill",
+          "scientific_name": "Lepomis macrochirus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Sunfish regulations."
+        },
+        "pumpkinseed": {
+          "common_name": "Pumpkinseed",
+          "scientific_name": "Lepomis gibbosus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Sunfish regulations."
+        }
+      },
+      "saltwater": {
+        "striped_bass": {
+          "common_name": "Striped Bass",
+          "scientific_name": "Morone saxatilis",
+          "season": "Year-round",
+          "min_size_inches": 28,
+          "max_size_inches": 38,
+          "bag_limit": 1,
+          "slot_limit": "One fish 28-38 inches OR one fish 43+ inches",
+          "notes": "Slot limit applies. Circle hooks required when using bait."
+        },
+        "bluefish": {
+          "common_name": "Bluefish",
+          "scientific_name": "Pomatomus saltatrix",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Private anglers: 5 fish. For-hire: 7 fish (proposed 2026)."
+        },
+        "summer_flounder": {
+          "common_name": "Summer Flounder (Fluke)",
+          "scientific_name": "Paralichthys dentatus",
+          "season": "Year-round",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": 4,
+          "notes": "16 inches Jan 1-May 31; 17.5 inches June 1-Dec 31. Bag limit 4 fish Jan 1-May 31."
+        },
+        "winter_flounder": {
+          "common_name": "Winter Flounder",
+          "scientific_name": "Pseudopleuronectes americanus",
+          "season": "April 1 - May 30",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 2,
+          "notes": "Limited season."
+        },
+        "black_sea_bass": {
+          "common_name": "Black Sea Bass",
+          "scientific_name": "Centropristis striata",
+          "season": "Varies",
+          "min_size_inches": 12.5,
+          "max_size_inches": null,
+          "bag_limit": 15,
+          "notes": "Check current season dates. Regulations may change."
+        },
+        "scup": {
+          "common_name": "Scup (Porgy)",
+          "scientific_name": "Stenotomus chrysops",
+          "season": "Year-round",
+          "min_size_inches": 9,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "State waters regulation."
+        },
+        "tautog": {
+          "common_name": "Tautog (Blackfish)",
+          "scientific_name": "Tautoga onitis",
+          "season": "Varies by region",
+          "min_size_inches": 15,
+          "max_size_inches": null,
+          "bag_limit": "Varies by season",
+          "notes": "Different bag limits for different seasons. Check current regulations."
+        },
+        "weakfish": {
+          "common_name": "Weakfish",
+          "scientific_name": "Cynoscion regalis",
+          "season": "Year-round",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": 1,
+          "notes": "Conservation measures in place."
+        },
+        "atlantic_croaker": {
+          "common_name": "Atlantic Croaker",
+          "scientific_name": "Micropogonias undulatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or bag limits."
+        },
+        "spot": {
+          "common_name": "Spot",
+          "scientific_name": "Leiostomus xanthurus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or bag limits."
+        }
+      }
+    },
+    "pennsylvania": {
+      "state_name": "Pennsylvania",
+      "agency": "Pennsylvania Fish and Boat Commission",
+      "agency_url": "https://www.pa.gov/agencies/fishandboat",
+      "freshwater": {
+        "largemouth_bass": {
+          "common_name": "Largemouth Bass",
+          "scientific_name": "Micropterus salmoides",
+          "season": "Year-round; No harvest 2nd Saturday in April - 2nd Saturday in June",
+          "min_size_inches": 15,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "During no-harvest season, bass must be immediately returned. No casting into spawning beds."
+        },
+        "smallmouth_bass": {
+          "common_name": "Smallmouth Bass",
+          "scientific_name": "Micropterus dolomieu",
+          "season": "Year-round; No harvest 2nd Saturday in April - 2nd Saturday in June",
+          "min_size_inches": 15,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "During no-harvest season, bass must be immediately returned. No casting into spawning beds."
+        },
+        "spotted_bass": {
+          "common_name": "Spotted Bass",
+          "scientific_name": "Micropterus punctulatus",
+          "season": "Year-round; No harvest 2nd Saturday in April - 2nd Saturday in June",
+          "min_size_inches": 15,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "Same as other black bass species."
+        },
+        "walleye": {
+          "common_name": "Walleye",
+          "scientific_name": "Sander vitreus",
+          "season": "January 1 - March 14; First Saturday in May - December 31",
+          "min_size_inches": 18,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "Closed March 15 to day before first Saturday in May."
+        },
+        "sauger": {
+          "common_name": "Sauger",
+          "scientific_name": "Sander canadensis",
+          "season": "January 1 - March 14; First Saturday in May - December 31",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "Same season as walleye."
+        },
+        "muskellunge": {
+          "common_name": "Muskellunge",
+          "scientific_name": "Esox masquinongy",
+          "season": "Year-round",
+          "min_size_inches": 40,
+          "max_size_inches": null,
+          "bag_limit": 1,
+          "notes": "Statewide regulation. Some waters may have 50-inch minimum."
+        },
+        "northern_pike": {
+          "common_name": "Northern Pike",
+          "scientific_name": "Esox lucius",
+          "season": "Year-round",
+          "min_size_inches": 24,
+          "max_size_inches": null,
+          "bag_limit": 3,
+          "notes": "Statewide regulation."
+        },
+        "chain_pickerel": {
+          "common_name": "Chain Pickerel",
+          "scientific_name": "Esox niger",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No closed season. Check waters for specific limits."
+        },
+        "rainbow_trout": {
+          "common_name": "Rainbow Trout",
+          "scientific_name": "Oncorhynchus mykiss",
+          "season": "Stocked waters: Jan 1-Feb 15, Day after Labor Day-Dec 31; Main season: 8 AM first Saturday in April - midnight Labor Day",
+          "min_size_inches": 7,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Combined trout limit. Special regulations on many waters."
+        },
+        "brown_trout": {
+          "common_name": "Brown Trout",
+          "scientific_name": "Salmo trutta",
+          "season": "Stocked waters: Jan 1-Feb 15, Day after Labor Day-Dec 31; Main season: 8 AM first Saturday in April - midnight Labor Day",
+          "min_size_inches": 7,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Combined trout limit. Special regulations on many waters."
+        },
+        "brook_trout": {
+          "common_name": "Brook Trout",
+          "scientific_name": "Salvelinus fontinalis",
+          "season": "Stocked waters: Jan 1-Feb 15, Day after Labor Day-Dec 31; Main season: 8 AM first Saturday in April - midnight Labor Day",
+          "min_size_inches": 7,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Combined trout limit. Special regulations on many waters."
+        },
+        "yellow_perch": {
+          "common_name": "Yellow Perch",
+          "scientific_name": "Perca flavescens",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Statewide regulation. Some waters differ."
+        },
+        "white_perch": {
+          "common_name": "White Perch",
+          "scientific_name": "Morone americana",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined panfish limits on some waters."
+        },
+        "black_crappie": {
+          "common_name": "Black Crappie",
+          "scientific_name": "Pomoxis nigromaculatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined panfish limits. Some waters have special regulations."
+        },
+        "white_crappie": {
+          "common_name": "White Crappie",
+          "scientific_name": "Pomoxis annularis",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined panfish limits."
+        },
+        "bluegill": {
+          "common_name": "Bluegill",
+          "scientific_name": "Lepomis macrochirus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Some waters like Leaser Lake (Lehigh County) require 7-inch minimum effective Jan 1, 2026, with 20 per species/50 total panfish limit."
+        },
+        "redear_sunfish": {
+          "common_name": "Redear Sunfish",
+          "scientific_name": "Lepomis microlophus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined panfish limits."
+        },
+        "pumpkinseed": {
+          "common_name": "Pumpkinseed",
+          "scientific_name": "Lepomis gibbosus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined panfish limits."
+        },
+        "rock_bass": {
+          "common_name": "Rock Bass",
+          "scientific_name": "Ambloplites rupestris",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined panfish limits."
+        },
+        "channel_catfish": {
+          "common_name": "Channel Catfish",
+          "scientific_name": "Ictalurus punctatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined catfish limit."
+        },
+        "flathead_catfish": {
+          "common_name": "Flathead Catfish",
+          "scientific_name": "Pylodictis olivaris",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined catfish limit."
+        },
+        "brown_bullhead": {
+          "common_name": "Brown Bullhead",
+          "scientific_name": "Ameiurus nebulosus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined catfish limit."
+        },
+        "yellow_bullhead": {
+          "common_name": "Yellow Bullhead",
+          "scientific_name": "Ameiurus natalis",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 50,
+          "notes": "Combined catfish limit."
+        },
+        "carp": {
+          "common_name": "Common Carp",
+          "scientific_name": "Cyprinus carpio",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No limits on nongame fish."
+        }
+      },
+      "saltwater": {
+        "note": "Pennsylvania has very limited saltwater access. Most fishing is freshwater. Delaware River tidal waters may have some saltwater species - check with PFBC for specific regulations."
+      }
+    },
+    "delaware": {
+      "state_name": "Delaware",
+      "agency": "Delaware Division of Fish and Wildlife (DNREC)",
+      "agency_url": "https://dnrec.delaware.gov/fish-wildlife",
+      "freshwater": {
+        "largemouth_bass": {
+          "common_name": "Largemouth Bass",
+          "scientific_name": "Micropterus salmoides",
+          "season": "Year-round",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Statewide regulation. Some waters may have special rules."
+        },
+        "smallmouth_bass": {
+          "common_name": "Smallmouth Bass",
+          "scientific_name": "Micropterus dolomieu",
+          "season": "Year-round",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Statewide regulation."
+        },
+        "chain_pickerel": {
+          "common_name": "Chain Pickerel",
+          "scientific_name": "Esox niger",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 6,
+          "notes": "Statewide regulation."
+        },
+        "yellow_perch": {
+          "common_name": "Yellow Perch",
+          "scientific_name": "Perca flavescens",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 10,
+          "notes": "Statewide regulation."
+        },
+        "white_perch": {
+          "common_name": "White Perch",
+          "scientific_name": "Morone americana",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 25,
+          "notes": "Statewide regulation."
+        },
+        "black_crappie": {
+          "common_name": "Black Crappie",
+          "scientific_name": "Pomoxis nigromaculatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 10,
+          "notes": "Combined crappie limit."
+        },
+        "white_crappie": {
+          "common_name": "White Crappie",
+          "scientific_name": "Pomoxis annularis",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 10,
+          "notes": "Combined crappie limit."
+        },
+        "bluegill": {
+          "common_name": "Bluegill",
+          "scientific_name": "Lepomis macrochirus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 10,
+          "notes": "Sunfish regulations."
+        },
+        "channel_catfish": {
+          "common_name": "Channel Catfish",
+          "scientific_name": "Ictalurus punctatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Statewide regulation."
+        }
+      },
+      "saltwater": {
+        "striped_bass": {
+          "common_name": "Striped Bass (Rockfish)",
+          "scientific_name": "Morone saxatilis",
+          "season": "Year-round; No harvest July 1 - August 31",
+          "min_size_inches": 28,
+          "max_size_inches": 37,
+          "bag_limit": 1,
+          "slot_limit": "28-37 inches",
+          "notes": "Slot limit applies. Summer closure for conservation."
+        },
+        "bluefish": {
+          "common_name": "Bluefish",
+          "scientific_name": "Pomatomus saltatrix",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "State waters regulation."
+        },
+        "summer_flounder": {
+          "common_name": "Summer Flounder (Fluke)",
+          "scientific_name": "Paralichthys dentatus",
+          "season": "Year-round",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": 4,
+          "notes": "16 inches Jan 1-May 31; 17 inches June 1-Dec 31."
+        },
+        "black_sea_bass": {
+          "common_name": "Black Sea Bass",
+          "scientific_name": "Centropristis striata",
+          "season": "Mid-May - Early December (varies annually)",
+          "min_size_inches": 12.5,
+          "max_size_inches": null,
+          "bag_limit": 15,
+          "notes": "Check current year's specific season dates."
+        },
+        "tautog": {
+          "common_name": "Tautog (Blackfish)",
+          "scientific_name": "Tautoga onitis",
+          "season": "Varies by region",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": "Varies by season",
+          "notes": "Different bag limits for different periods. Check current regulations."
+        },
+        "weakfish": {
+          "common_name": "Weakfish (Sea Trout)",
+          "scientific_name": "Cynoscion regalis",
+          "season": "Year-round",
+          "min_size_inches": 13,
+          "max_size_inches": null,
+          "bag_limit": 1,
+          "notes": "Conservation measures in place."
+        },
+        "atlantic_croaker": {
+          "common_name": "Atlantic Croaker",
+          "scientific_name": "Micropogonias undulatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or creel limits."
+        },
+        "spot": {
+          "common_name": "Spot",
+          "scientific_name": "Leiostomus xanthurus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or creel limits."
+        },
+        "kingfish": {
+          "common_name": "Kingfish (Southern Kingfish)",
+          "scientific_name": "Menticirrhus americanus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or creel limits."
+        },
+        "sheepshead": {
+          "common_name": "Sheepshead",
+          "scientific_name": "Archosargus probatocephalus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or creel limits."
+        },
+        "scup": {
+          "common_name": "Scup (Porgy)",
+          "scientific_name": "Stenotomus chrysops",
+          "season": "Year-round",
+          "min_size_inches": 9,
+          "max_size_inches": null,
+          "bag_limit": 30,
+          "notes": "State waters regulation."
+        }
+      }
+    },
+    "maryland": {
+      "state_name": "Maryland",
+      "agency": "Maryland Department of Natural Resources (DNR)",
+      "agency_url": "https://dnr.maryland.gov/fisheries",
+      "freshwater": {
+        "largemouth_bass": {
+          "common_name": "Largemouth Bass",
+          "scientific_name": "Micropterus salmoides",
+          "season": "Year-round; Closed March 1 - June 15 (catch-and-release allowed)",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "possession_limit": 10,
+          "notes": "During closed season, catch-and-release is permitted unless otherwise posted."
+        },
+        "smallmouth_bass": {
+          "common_name": "Smallmouth Bass",
+          "scientific_name": "Micropterus dolomieu",
+          "season": "Year-round; Closed March 1 - June 15 (catch-and-release allowed)",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "possession_limit": 10,
+          "notes": "Combined with largemouth bass. During closed season, catch-and-release is permitted."
+        },
+        "rainbow_trout": {
+          "common_name": "Rainbow Trout",
+          "scientific_name": "Oncorhynchus mykiss",
+          "season": "Opens last Saturday in March (March 28, 2026)",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Combined trout limit. Put-and-take areas may differ."
+        },
+        "brown_trout": {
+          "common_name": "Brown Trout",
+          "scientific_name": "Salmo trutta",
+          "season": "Opens last Saturday in March (March 28, 2026)",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Combined trout limit. Special regulations on many streams."
+        },
+        "brook_trout": {
+          "common_name": "Brook Trout",
+          "scientific_name": "Salvelinus fontinalis",
+          "season": "Opens last Saturday in March (March 28, 2026)",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "Combined trout limit. Special regulations on native trout streams."
+        },
+        "chain_pickerel": {
+          "common_name": "Chain Pickerel",
+          "scientific_name": "Esox niger",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No closed season or size limits."
+        },
+        "yellow_perch": {
+          "common_name": "Yellow Perch",
+          "scientific_name": "Perca flavescens",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No statewide limit. Check specific waters."
+        },
+        "white_perch": {
+          "common_name": "White Perch",
+          "scientific_name": "Morone americana",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No statewide limit. Check specific waters."
+        },
+        "black_crappie": {
+          "common_name": "Black Crappie",
+          "scientific_name": "Pomoxis nigromaculatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 15,
+          "possession_limit": 30,
+          "notes": "Combined crappie limit (aggregate)."
+        },
+        "white_crappie": {
+          "common_name": "White Crappie",
+          "scientific_name": "Pomoxis annularis",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 15,
+          "possession_limit": 30,
+          "notes": "Combined crappie limit (aggregate)."
+        },
+        "bluegill": {
+          "common_name": "Bluegill",
+          "scientific_name": "Lepomis macrochirus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No statewide limits. Some waters may have special regulations."
+        },
+        "channel_catfish": {
+          "common_name": "Channel Catfish",
+          "scientific_name": "Ictalurus punctatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "possession_limit": 10,
+          "notes": "Some waters may differ."
+        },
+        "flathead_catfish": {
+          "common_name": "Flathead Catfish",
+          "scientific_name": "Pylodictis olivaris",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No statewide limits."
+        },
+        "brown_bullhead": {
+          "common_name": "Brown Bullhead",
+          "scientific_name": "Ameiurus nebulosus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or season restrictions in some counties."
+        },
+        "yellow_bullhead": {
+          "common_name": "Yellow Bullhead",
+          "scientific_name": "Ameiurus natalis",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or season restrictions in some counties."
+        }
+      },
+      "saltwater": {
+        "striped_bass": {
+          "common_name": "Striped Bass (Rockfish)",
+          "scientific_name": "Morone saxatilis",
+          "season": "Year-round with area closures; Non-targeting closure Aug 1-31; May 16-31 in Susquehanna River/Flats/Northeast River",
+          "min_size_inches": 19,
+          "max_size_inches": 31,
+          "bag_limit": 1,
+          "slot_limit": "19-31 inches",
+          "notes": "12% reduction planned for 2026. Non-offset circle hooks required with natural bait. No live eel allowed. Max 2 hooks per rod. Proposal for adjusted season in 2026."
+        },
+        "bluefish": {
+          "common_name": "Bluefish",
+          "scientific_name": "Pomatomus saltatrix",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": 5,
+          "notes": "State waters regulation."
+        },
+        "summer_flounder": {
+          "common_name": "Summer Flounder (Fluke)",
+          "scientific_name": "Paralichthys dentatus",
+          "season": "Year-round",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": 4,
+          "notes": "Regulations may vary. Check current year specifications."
+        },
+        "black_sea_bass": {
+          "common_name": "Black Sea Bass",
+          "scientific_name": "Centropristis striata",
+          "season": "Varies annually",
+          "min_size_inches": 12.5,
+          "max_size_inches": null,
+          "bag_limit": 15,
+          "notes": "Season dates vary by year. Check current regulations."
+        },
+        "tautog": {
+          "common_name": "Tautog (Blackfish)",
+          "scientific_name": "Tautoga onitis",
+          "season": "Varies by region and period",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": "Varies by season",
+          "notes": "Different bag limits for different periods. Overfishing concerns in some areas."
+        },
+        "weakfish": {
+          "common_name": "Weakfish (Gray Trout)",
+          "scientific_name": "Cynoscion regalis",
+          "season": "Year-round",
+          "min_size_inches": 13,
+          "max_size_inches": null,
+          "bag_limit": 1,
+          "notes": "Conservation measures in place."
+        },
+        "red_drum": {
+          "common_name": "Red Drum (Redfish)",
+          "scientific_name": "Sciaenops ocellatus",
+          "season": "Year-round",
+          "min_size_inches": 18,
+          "max_size_inches": 27,
+          "bag_limit": 1,
+          "slot_limit": "18-27 inches",
+          "notes": "Slot limit applies."
+        },
+        "spotted_seatrout": {
+          "common_name": "Spotted Seatrout (Speckled Trout)",
+          "scientific_name": "Cynoscion nebulosus",
+          "season": "Year-round",
+          "min_size_inches": 12,
+          "max_size_inches": null,
+          "bag_limit": 4,
+          "notes": "State waters regulation."
+        },
+        "atlantic_croaker": {
+          "common_name": "Atlantic Croaker",
+          "scientific_name": "Micropogonias undulatus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or creel limits."
+        },
+        "spot": {
+          "common_name": "Spot",
+          "scientific_name": "Leiostomus xanthurus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or creel limits."
+        },
+        "black_drum": {
+          "common_name": "Black Drum",
+          "scientific_name": "Pogonias cromis",
+          "season": "Year-round",
+          "min_size_inches": 16,
+          "max_size_inches": null,
+          "bag_limit": 1,
+          "notes": "One fish per day."
+        },
+        "sheepshead": {
+          "common_name": "Sheepshead",
+          "scientific_name": "Archosargus probatocephalus",
+          "season": "Year-round",
+          "min_size_inches": null,
+          "max_size_inches": null,
+          "bag_limit": null,
+          "notes": "No size or creel limits."
+        },
+        "scup": {
+          "common_name": "Scup (Porgy)",
+          "scientific_name": "Stenotomus chrysops",
+          "season": "Year-round",
+          "min_size_inches": 9,
+          "max_size_inches": null,
+          "bag_limit": 30,
+          "notes": "State waters regulation."
+        }
+      }
+    }
+  },
+  "species_distribution": {
+    "notes": "This section indicates which species are commonly found in each state's waters.",
+    "new_york": {
+      "freshwater_species": [
+        "Largemouth Bass",
+        "Smallmouth Bass",
+        "Walleye",
+        "Northern Pike",
+        "Muskellunge",
+        "Chain Pickerel",
+        "Rainbow Trout",
+        "Brown Trout",
+        "Brook Trout",
+        "Lake Trout",
+        "Yellow Perch",
+        "White Perch",
+        "Black Crappie",
+        "White Crappie",
+        "Bluegill",
+        "Pumpkinseed",
+        "Redbreast Sunfish",
+        "Rock Bass",
+        "Channel Catfish",
+        "Brown Bullhead",
+        "Yellow Bullhead",
+        "American Shad",
+        "Common Carp"
+      ],
+      "saltwater_species": [
+        "Striped Bass",
+        "Bluefish",
+        "Summer Flounder",
+        "Winter Flounder",
+        "Black Sea Bass",
+        "Scup",
+        "Tautog",
+        "Weakfish",
+        "Atlantic Cod",
+        "Haddock",
+        "Pollock",
+        "Atlantic Mackerel",
+        "Spanish Mackerel",
+        "King Mackerel",
+        "Atlantic Bonito",
+        "False Albacore",
+        "Bluefin Tuna",
+        "Yellowfin Tuna",
+        "Albacore Tuna",
+        "Red Drum",
+        "Black Drum",
+        "Atlantic Croaker",
+        "Spot",
+        "Cobia"
+      ]
+    },
+    "new_jersey": {
+      "freshwater_species": [
+        "Largemouth Bass",
+        "Smallmouth Bass",
+        "Chain Pickerel",
+        "Rainbow Trout",
+        "Brown Trout",
+        "Brook Trout",
+        "Yellow Perch",
+        "White Perch",
+        "Black Crappie",
+        "White Crappie",
+        "Bluegill",
+        "Pumpkinseed",
+        "Channel Catfish",
+        "American Shad",
+        "Common Carp"
+      ],
+      "saltwater_species": [
+        "Striped Bass",
+        "Bluefish",
+        "Summer Flounder",
+        "Winter Flounder",
+        "Black Sea Bass",
+        "Scup",
+        "Tautog",
+        "Weakfish",
+        "Atlantic Mackerel",
+        "Spanish Mackerel",
+        "King Mackerel",
+        "Atlantic Bonito",
+        "False Albacore",
+        "Bluefin Tuna",
+        "Yellowfin Tuna",
+        "Red Drum",
+        "Atlantic Croaker",
+        "Spot",
+        "Cobia",
+        "Mahi-Mahi"
+      ]
+    },
+    "pennsylvania": {
+      "freshwater_species": [
+        "Largemouth Bass",
+        "Smallmouth Bass",
+        "Spotted Bass",
+        "Walleye",
+        "Sauger",
+        "Muskellunge",
+        "Northern Pike",
+        "Chain Pickerel",
+        "Rainbow Trout",
+        "Brown Trout",
+        "Brook Trout",
+        "Yellow Perch",
+        "White Perch",
+        "Black Crappie",
+        "White Crappie",
+        "Bluegill",
+        "Redear Sunfish",
+        "Pumpkinseed",
+        "Rock Bass",
+        "Channel Catfish",
+        "Flathead Catfish",
+        "Brown Bullhead",
+        "Yellow Bullhead",
+        "American Shad",
+        "Common Carp"
+      ],
+      "saltwater_species": [
+        "Note: Pennsylvania has minimal saltwater access. Some anadromous species in Delaware River tidal waters."
+      ]
+    },
+    "delaware": {
+      "freshwater_species": [
+        "Largemouth Bass",
+        "Smallmouth Bass",
+        "Chain Pickerel",
+        "Yellow Perch",
+        "White Perch",
+        "Black Crappie",
+        "White Crappie",
+        "Bluegill",
+        "Channel Catfish",
+        "American Shad"
+      ],
+      "saltwater_species": [
+        "Striped Bass",
+        "Bluefish",
+        "Summer Flounder",
+        "Black Sea Bass",
+        "Tautog",
+        "Weakfish",
+        "Atlantic Croaker",
+        "Spot",
+        "Kingfish",
+        "Sheepshead",
+        "Scup",
+        "Red Drum",
+        "Spotted Seatrout",
+        "Spanish Mackerel",
+        "King Mackerel",
+        "Cobia",
+        "Mahi-Mahi"
+      ]
+    },
+    "maryland": {
+      "freshwater_species": [
+        "Largemouth Bass",
+        "Smallmouth Bass",
+        "Chain Pickerel",
+        "Rainbow Trout",
+        "Brown Trout",
+        "Brook Trout",
+        "Yellow Perch",
+        "White Perch",
+        "Black Crappie",
+        "White Crappie",
+        "Bluegill",
+        "Channel Catfish",
+        "Flathead Catfish",
+        "Brown Bullhead",
+        "Yellow Bullhead",
+        "American Shad",
+        "Common Carp"
+      ],
+      "saltwater_species": [
+        "Striped Bass",
+        "Bluefish",
+        "Summer Flounder",
+        "Black Sea Bass",
+        "Tautog",
+        "Weakfish",
+        "Red Drum",
+        "Spotted Seatrout",
+        "Atlantic Croaker",
+        "Spot",
+        "Black Drum",
+        "Sheepshead",
+        "Scup",
+        "Spanish Mackerel",
+        "King Mackerel",
+        "Cobia",
+        "Mahi-Mahi"
+      ]
+    }
+  },
+  "important_notes": {
+    "general": [
+      "Regulations are subject to change throughout the year. Always check with state agencies before fishing.",
+      "Many waters have special regulations that differ from statewide rules.",
+      "Federal waters may have different regulations than state waters.",
+      "Some species are protected and cannot be harvested.",
+      "License requirements vary by state and age.",
+      "Size limits are typically total length unless otherwise specified.",
+      "Bag limits are daily limits unless otherwise specified.",
+      "Possession limits may differ from daily bag limits."
+    ],
+    "conservation": [
+      "Circle hooks are required for striped bass in most states when using bait.",
+      "Handle fish carefully when practicing catch-and-release.",
+      "Keep only what you will use and follow all regulations.",
+      "Report violations to state fish and wildlife enforcement.",
+      "Be aware of fish consumption advisories due to contaminants."
+    ],
+    "seasonal_closures": [
+      "Bass often have spawning closures in spring (March-June).",
+      "Trout seasons vary significantly by location and water type.",
+      "Striped bass have summer closures in some states for conservation.",
+      "Some species have winter closures to protect spawning fish."
+    ]
+  },
+  "data_reliability": {
+    "confidence_level": "High",
+    "sources_consulted": [
+      "Official state fish and wildlife agency websites",
+      "NOAA Fisheries regulations",
+      "eRegulations.com state fishing guides",
+      "State regulatory documents and PDFs",
+      "2026 proposed and enacted regulations"
+    ],
+    "last_verified": "2026-02-10",
+    "disclaimer": "This data was compiled from multiple sources and represents regulations as of February 2026. Regulations can change at any time. Always verify current regulations with the appropriate state agency before fishing. This database is for informational purposes only and does not constitute legal advice."
+  }
+}

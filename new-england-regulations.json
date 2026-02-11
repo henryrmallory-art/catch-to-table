@@ -1,0 +1,762 @@
+[
+  {
+    "state_name": "Maine",
+    "species": [
+      {
+        "common_name": "Largemouth Bass",
+        "min_size_inches": 18,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, varies by zone (North/South)",
+        "source_url": "https://www.maine.gov/ifw/fishing-boating/fishing/laws-rules/statewide-laws.html"
+      },
+      {
+        "common_name": "Smallmouth Bass",
+        "min_size_inches": 18,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, varies by zone (North/South)",
+        "source_url": "https://www.maine.gov/ifw/fishing-boating/fishing/laws-rules/statewide-laws.html"
+      },
+      {
+        "common_name": "Striped Bass",
+        "min_size_inches": 28,
+        "max_size_inches": 31,
+        "bag_limit": 1,
+        "season_open": "2026-07-01",
+        "season_close": "2026-11-30",
+        "notes": "Slot limit, circle hooks required with bait",
+        "source_url": "https://www.maine.gov/dmr/sites/maine.gov.dmr/files/inline-files/2025_striped_bass_regs.pdf"
+      },
+      {
+        "common_name": "Bluefish",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, no size limit",
+        "source_url": "https://www.maine.gov/dmr/fisheries/recreational/fishing-regulations-tips"
+      },
+      {
+        "common_name": "Flounder",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Check Maine DMR for specific flounder species regulations",
+        "source_url": "https://www.maine.gov/dmr/fisheries/recreational/fishing-regulations-tips"
+      },
+      {
+        "common_name": "Atlantic Bluefin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": 73,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "School/medium size, HMS permit required, 24hr reporting required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bluefin-tuna-fishery-statuses-and-bag"
+      },
+      {
+        "common_name": "Yellowfin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Albacore Tuna",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No limit, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Rainbow Trout",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Varies by zone, combined with brook/brown trout limits",
+        "source_url": "https://www.maine.gov/ifw/fishing-boating/fishing/laws-rules/statewide-laws.html"
+      },
+      {
+        "common_name": "Landlocked Salmon",
+        "min_size_inches": 14,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": null,
+        "season_close": null,
+        "notes": "General law, check specific waters for exceptions",
+        "source_url": "https://www.maine.gov/ifw/fishing-boating/fishing/laws-rules/statewide-laws.html"
+      },
+      {
+        "common_name": "Mahi-Mahi",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 10,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters regulation, 54 fish vessel limit",
+        "source_url": "https://www.fisheries.noaa.gov/new-england-mid-atlantic/recreational-fishing/recreational-fishing-regulations-species"
+      },
+      {
+        "common_name": "Spotted Seatrout",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No closed season, uncommon in Maine waters",
+        "source_url": "https://www.fisheries.noaa.gov/new-england-mid-atlantic/recreational-fishing/recreational-fishing-regulations-species"
+      },
+      {
+        "common_name": "Red Drum",
+        "min_size_inches": 20,
+        "max_size_inches": 27,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Slot limit, no closed season, uncommon in Maine waters",
+        "source_url": "https://www.fisheries.noaa.gov/new-england-mid-atlantic/recreational-fishing/recreational-fishing-regulations-species"
+      },
+      {
+        "common_name": "White Perch",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 25,
+        "season_open": null,
+        "season_close": null,
+        "notes": "May vary by specific waters",
+        "source_url": "https://www.maine.gov/ifw/fishing-boating/fishing/laws-rules/statewide-laws.html"
+      }
+    ]
+  },
+  {
+    "state_name": "New Hampshire",
+    "species": [
+      {
+        "common_name": "Largemouth Bass",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Catch-and-release only May 15-June 15",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/freshwater/lakes-ponds-general-rules"
+      },
+      {
+        "common_name": "Smallmouth Bass",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Catch-and-release only May 15-June 15",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/freshwater/lakes-ponds-general-rules"
+      },
+      {
+        "common_name": "Striped Bass",
+        "min_size_inches": 28,
+        "max_size_inches": 31,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, slot limit, circle hooks required with bait",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/saltwater/recreational-saltwater-fishing-finfish"
+      },
+      {
+        "common_name": "Bluefish",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, 5 fish for for-hire operations, circle hooks required with bait",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/saltwater/recreational-saltwater-fishing-finfish"
+      },
+      {
+        "common_name": "Summer Flounder",
+        "min_size_inches": 15,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, recreational only",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/saltwater/recreational-saltwater-fishing-finfish"
+      },
+      {
+        "common_name": "Winter Flounder",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 8,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/saltwater/recreational-saltwater-fishing-finfish"
+      },
+      {
+        "common_name": "Rainbow Trout",
+        "min_size_inches": 15,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Combined limit with brook/brown trout",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/freshwater/lakes-ponds-general-rules"
+      },
+      {
+        "common_name": "Landlocked Salmon",
+        "min_size_inches": 15,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Check specific water body regulations",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/freshwater/lakes-ponds-general-rules"
+      },
+      {
+        "common_name": "Walleye",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 4,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Size restrictions may apply in some waters",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/freshwater/lakes-ponds-general-rules"
+      },
+      {
+        "common_name": "Yellow Perch",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "General regulations apply",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/freshwater/lakes-ponds-general-rules"
+      },
+      {
+        "common_name": "White Perch",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 25,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Interstate waters, 50 fish aggregate",
+        "source_url": "https://www.eregulations.com/newhampshire/fishing/freshwater/interstate-waters"
+      },
+      {
+        "common_name": "Atlantic Bluefin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": 73,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bluefin-tuna-fishery-statuses-and-bag"
+      },
+      {
+        "common_name": "Yellowfin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Albacore Tuna",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No limit, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Mahi-Mahi",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 10,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters regulation",
+        "source_url": "https://www.fisheries.noaa.gov/new-england-mid-atlantic/recreational-fishing/recreational-fishing-regulations-species"
+      }
+    ]
+  },
+  {
+    "state_name": "Vermont",
+    "species": [
+      {
+        "common_name": "Largemouth Bass",
+        "min_size_inches": 10,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": "2026-06-13",
+        "season_close": "2027-03-15",
+        "notes": "Second Saturday in June to March 15, combined limit with smallmouth",
+        "source_url": "https://www.eregulations.com/vermont/fishing/table-1-general-fishing-regulations"
+      },
+      {
+        "common_name": "Smallmouth Bass",
+        "min_size_inches": 10,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": "2026-06-13",
+        "season_close": "2027-03-15",
+        "notes": "Second Saturday in June to March 15, combined limit with largemouth",
+        "source_url": "https://www.eregulations.com/vermont/fishing/table-1-general-fishing-regulations"
+      },
+      {
+        "common_name": "Rainbow Trout",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 8,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Combined with brook/brown trout in rivers/streams, 6 in lakes/ponds",
+        "source_url": "https://www.eregulations.com/vermont/fishing/table-1-general-fishing-regulations"
+      },
+      {
+        "common_name": "Landlocked Salmon",
+        "min_size_inches": 17,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": "2026-04-11",
+        "season_close": "2026-10-31",
+        "notes": "Second Saturday in April to Oct 31 and Jan 1 to Mar 15, combined with lake trout",
+        "source_url": "https://www.eregulations.com/vermont/fishing/table-1-general-fishing-regulations"
+      },
+      {
+        "common_name": "Walleye",
+        "min_size_inches": 18,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": "2026-05-03",
+        "season_close": "2027-03-15",
+        "notes": "May 3 to March 15",
+        "source_url": "https://www.eregulations.com/vermont/fishing/table-1-general-fishing-regulations"
+      },
+      {
+        "common_name": "Yellow Perch",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No size or bag limit, year-round",
+        "source_url": "https://www.eregulations.com/vermont/fishing/table-1-general-fishing-regulations"
+      },
+      {
+        "common_name": "White Perch",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No size or bag limit for Lake Champlain, may vary by water",
+        "source_url": "https://www.eregulations.com/vermont/fishing/table-1-general-fishing-regulations"
+      }
+    ]
+  },
+  {
+    "state_name": "Massachusetts",
+    "species": [
+      {
+        "common_name": "Largemouth Bass",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round",
+        "source_url": "https://www.mass.gov/info-details/freshwater-fishing-regulations"
+      },
+      {
+        "common_name": "Smallmouth Bass",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round",
+        "source_url": "https://www.mass.gov/info-details/freshwater-fishing-regulations"
+      },
+      {
+        "common_name": "Striped Bass",
+        "min_size_inches": 28,
+        "max_size_inches": 35,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, slot limit (less than 35 inches)",
+        "source_url": "https://www.mass.gov/info-details/recreational-saltwater-fishing-regulations"
+      },
+      {
+        "common_name": "Bluefish",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, 5 fish for for-hire anglers, proposed increase to 5/7 fish",
+        "source_url": "https://www.mass.gov/info-details/recreational-saltwater-fishing-regulations"
+      },
+      {
+        "common_name": "Summer Flounder",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal measures waived for 2025, check for 2026 updates",
+        "source_url": "https://www.mass.gov/info-details/recreational-saltwater-fishing-regulations"
+      },
+      {
+        "common_name": "Rainbow Trout",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round in lakes/ponds/major rivers, seasonal in other waters",
+        "source_url": "https://www.mass.gov/info-details/freshwater-fishing-regulations"
+      },
+      {
+        "common_name": "Landlocked Salmon",
+        "min_size_inches": 15,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round",
+        "source_url": "https://www.mass.gov/info-details/freshwater-fishing-regulations"
+      },
+      {
+        "common_name": "Walleye",
+        "min_size_inches": 14,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round",
+        "source_url": "https://www.mass.gov/info-details/freshwater-fishing-regulations"
+      },
+      {
+        "common_name": "White Perch",
+        "min_size_inches": 8,
+        "max_size_inches": null,
+        "bag_limit": 25,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No closed season",
+        "source_url": "https://www.mass.gov/info-details/freshwater-fishing-regulations"
+      },
+      {
+        "common_name": "Atlantic Bluefin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": 73,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bluefin-tuna-fishery-statuses-and-bag"
+      },
+      {
+        "common_name": "Yellowfin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Albacore Tuna",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No limit, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Mahi-Mahi",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 10,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters regulation, 54 fish vessel limit",
+        "source_url": "https://www.fisheries.noaa.gov/new-england-mid-atlantic/recreational-fishing/recreational-fishing-regulations-species"
+      }
+    ]
+  },
+  {
+    "state_name": "Rhode Island",
+    "species": [
+      {
+        "common_name": "Largemouth Bass",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, combined limit with smallmouth",
+        "source_url": "https://dem.ri.gov/natural-resources-bureau/fish-wildlife/rules-regulations/freshwater-sizes-and-limits"
+      },
+      {
+        "common_name": "Smallmouth Bass",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, combined limit with largemouth",
+        "source_url": "https://dem.ri.gov/natural-resources-bureau/fish-wildlife/rules-regulations/freshwater-sizes-and-limits"
+      },
+      {
+        "common_name": "Striped Bass",
+        "min_size_inches": 28,
+        "max_size_inches": 31,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, slot limit (less than 31 inches), circle hooks required with bait",
+        "source_url": "https://dem.ri.gov/natural-resources-bureau/marine-fisheries/marine-fisheries-minimum-sizes-possession-limits"
+      },
+      {
+        "common_name": "Bluefish",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, 5 fish for party/charter vessels",
+        "source_url": "https://dem.ri.gov/natural-resources-bureau/marine-fisheries/marine-fisheries-minimum-sizes-possession-limits"
+      },
+      {
+        "common_name": "Summer Flounder",
+        "min_size_inches": 19,
+        "max_size_inches": null,
+        "bag_limit": 6,
+        "season_open": "2026-04-01",
+        "season_close": "2026-12-31",
+        "notes": "Special shore provisions allow some 17-inch fish",
+        "source_url": "https://dem.ri.gov/natural-resources-bureau/marine-fisheries/marine-fisheries-minimum-sizes-possession-limits"
+      },
+      {
+        "common_name": "Rainbow Trout",
+        "min_size_inches": 8,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": "2026-04-09",
+        "season_close": "2026-11-30",
+        "notes": "2 fish Dec 1 to Feb 28, trout conservation stamp required",
+        "source_url": "https://dem.ri.gov/natural-resources-bureau/fish-wildlife/rules-regulations/freshwater-sizes-and-limits"
+      },
+      {
+        "common_name": "Landlocked Salmon",
+        "min_size_inches": 11,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": "2026-04-09",
+        "season_close": "2027-02-28",
+        "notes": "Combined with trout/charr limit",
+        "source_url": "https://dem.ri.gov/natural-resources-bureau/fish-wildlife/rules-regulations/freshwater-sizes-and-limits"
+      },
+      {
+        "common_name": "Atlantic Bluefin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": 73,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bluefin-tuna-fishery-statuses-and-bag"
+      },
+      {
+        "common_name": "Yellowfin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Albacore Tuna",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No limit, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Mahi-Mahi",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 10,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters regulation, 54 fish vessel limit",
+        "source_url": "https://www.fisheries.noaa.gov/new-england-mid-atlantic/recreational-fishing/recreational-fishing-regulations-species"
+      }
+    ]
+  },
+  {
+    "state_name": "Connecticut",
+    "species": [
+      {
+        "common_name": "Largemouth Bass",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 6,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, combined with smallmouth, some waters have slot limits",
+        "source_url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "Smallmouth Bass",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 6,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, combined with largemouth, no minimum in rivers/streams",
+        "source_url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "Striped Bass",
+        "min_size_inches": 28,
+        "max_size_inches": 31,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, slot limit (less than 31 inches)",
+        "source_url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "Bluefish",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, includes snappers",
+        "source_url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "Winter Flounder",
+        "min_size_inches": 12,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": "2026-04-01",
+        "season_close": "2026-12-31",
+        "notes": "April 1 to December 31",
+        "source_url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "Rainbow Trout",
+        "min_size_inches": 9,
+        "max_size_inches": null,
+        "bag_limit": 5,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round, catch-and-release only Mar 1 to second Sat in April, min 9 inches as of Jan 1, 2026",
+        "source_url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "Atlantic Salmon",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 1,
+        "season_open": "2026-04-02",
+        "season_close": "2027-02-28",
+        "notes": "Prohibited except in designated waters, fly/artificial lure only",
+        "source_url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "Walleye",
+        "min_size_inches": 18,
+        "max_size_inches": null,
+        "bag_limit": 2,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round",
+        "source_url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "White Perch",
+        "min_size_inches": 7,
+        "max_size_inches": null,
+        "bag_limit": 30,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Year-round",
+        "source_url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/species-regulations"
+      },
+      {
+        "common_name": "Atlantic Bluefin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": 73,
+        "bag_limit": 1,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bluefin-tuna-fishery-statuses-and-bag"
+      },
+      {
+        "common_name": "Yellowfin Tuna",
+        "min_size_inches": 27,
+        "max_size_inches": null,
+        "bag_limit": 3,
+        "season_open": null,
+        "season_close": null,
+        "notes": "HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Albacore Tuna",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": null,
+        "season_open": null,
+        "season_close": null,
+        "notes": "No limit, HMS permit required",
+        "source_url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-bigeye-albacore-yellowfin-and-skipjack-tuna"
+      },
+      {
+        "common_name": "Mahi-Mahi",
+        "min_size_inches": null,
+        "max_size_inches": null,
+        "bag_limit": 10,
+        "season_open": null,
+        "season_close": null,
+        "notes": "Federal waters regulation, 54 fish vessel limit",
+        "source_url": "https://www.fisheries.noaa.gov/new-england-mid-atlantic/recreational-fishing/recreational-fishing-regulations-species"
+      }
+    ]
+  }
+]
