@@ -98,7 +98,6 @@ export function LegalityCard() {
   }
 
   const { canKeep, reasons, jurisdiction, regulations } = legalityResult
-  const primaryReg = regulations?.[0]?.regulation
 
   return (
     <div className="min-h-screen bg-slate-950 pb-20">
