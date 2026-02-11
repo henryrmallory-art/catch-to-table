@@ -97,7 +97,7 @@ export function LegalityCard() {
     )
   }
 
-  const { canKeep, reasons, jurisdiction, regulations } = legalityResult
+  const { canKeep, reasons, jurisdiction, regulations, boundaryWarning } = legalityResult
 
   return (
     <div className="min-h-screen bg-slate-950 pb-20">
@@ -128,6 +128,23 @@ export function LegalityCard() {
       </div>
 
       <div className="p-6 space-y-6">
+        {/* Boundary Warning */}
+        {boundaryWarning && (
+          <Card className="border-amber-500 bg-amber-950/20 p-5">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="h-6 w-6 text-amber-500 flex-shrink-0 mt-0.5" />
+              <div>
+                <h3 className="text-lg font-semibold text-amber-500 mb-2">
+                  Near State Boundary
+                </h3>
+                <p className="text-amber-200 text-sm leading-relaxed">
+                  {boundaryWarning}
+                </p>
+              </div>
+            </div>
+          </Card>
+        )}
+
         {/* Reasons */}
         {reasons && reasons.length > 0 && (
           <Card className="border-slate-800 bg-slate-900 p-5">

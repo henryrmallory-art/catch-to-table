@@ -224,7 +224,7 @@ export function RecipeCards() {
                 )}
               </div>
             </Card>
-          )))}
+          ))}
           </div>
         )}
 

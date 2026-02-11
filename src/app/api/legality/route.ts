@@ -51,6 +51,156 @@ function findStateByCoordinates(latitude: number, longitude: number) {
   return null
 }
 
+// Calculate distance between two points using Haversine formula (in miles)
+function haversineDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const R = 3959 // Earth's radius in miles
+  const dLat = toRad(lat2 - lat1)
+  const dLon = toRad(lon2 - lon1)
+
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) * Math.sin(dLon / 2)
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+  return R * c
+}
+
+function toRad(degrees: number): number {
+  return (degrees * Math.PI) / 180
+}
+
+// Calculate perpendicular distance from point to line segment
+function pointToLineSegmentDistance(
+  px: number,
+  py: number,
+  x1: number,
+  y1: number,
+  x2: number,
+  y2: number
+): number {
+  const A = px - x1
+  const B = py - y1
+  const C = x2 - x1
+  const D = y2 - y1
+
+  const dot = A * C + B * D
+  const lenSq = C * C + D * D
+  let param = -1
+
+  if (lenSq !== 0) {
+    param = dot / lenSq
+  }
+
+  let xx, yy
+
+  if (param < 0) {
+    xx = x1
+    yy = y1
+  } else if (param > 1) {
+    xx = x2
+    yy = y2
+  } else {
+    xx = x1 + param * C
+    yy = y1 + param * D
+  }
+
+  return haversineDistance(py, px, yy, xx)
+}
+
+// Calculate minimum distance from a point to a polygon boundary
+function distanceToPolygonBoundary(point: [number, number], polygon: number[][]): number {
+  const [lng, lat] = point
+  let minDistance = Infinity
+
+  for (let i = 0; i < polygon.length; i++) {
+    const j = (i + 1) % polygon.length
+    const [x1, y1] = polygon[i]
+    const [x2, y2] = polygon[j]
+
+    const distance = pointToLineSegmentDistance(lng, lat, x1, y1, x2, y2)
+    minDistance = Math.min(minDistance, distance)
+  }
+
+  return minDistance
+}
+
+// Check if point is near a state boundary
+function checkBoundaryProximity(
+  latitude: number,
+  longitude: number,
+  currentState: string
+): {
+  isNear: boolean
+  distance: number
+  nearbyStates: string[]
+} {
+  try {
+    const boundariesPath = path.join(process.cwd(), 'public', 'state-boundaries.json')
+    const boundariesData = JSON.parse(fs.readFileSync(boundariesPath, 'utf-8'))
+    const thresholdMiles = 0.5
+
+    let minDistance = Infinity
+    const nearbyStates: string[] = []
+
+    // Calculate distance to current state boundary
+    const currentBoundary = boundariesData[currentState]
+    if (currentBoundary) {
+      const coords = currentBoundary.coordinates
+
+      // Handle both Polygon and MultiPolygon
+      if (Array.isArray(coords[0][0][0])) {
+        // MultiPolygon
+        for (const polygon of coords) {
+          const distance = distanceToPolygonBoundary([longitude, latitude], polygon[0])
+          minDistance = Math.min(minDistance, distance)
+        }
+      } else {
+        // Single Polygon
+        const distance = distanceToPolygonBoundary([longitude, latitude], coords[0])
+        minDistance = Math.min(minDistance, distance)
+      }
+    }
+
+    // If we're near the boundary, check which neighboring states we might be approaching
+    if (minDistance <= thresholdMiles) {
+      for (const [stateName, data] of Object.entries(boundariesData)) {
+        if (stateName === currentState) continue
+
+        const stateData = data as any
+        const coords = stateData.coordinates
+        let stateMinDistance = Infinity
+
+        // Handle both Polygon and MultiPolygon
+        if (Array.isArray(coords[0][0][0])) {
+          // MultiPolygon
+          for (const polygon of coords) {
+            const distance = distanceToPolygonBoundary([longitude, latitude], polygon[0])
+            stateMinDistance = Math.min(stateMinDistance, distance)
+          }
+        } else {
+          // Single Polygon
+          const distance = distanceToPolygonBoundary([longitude, latitude], coords[0])
+          stateMinDistance = Math.min(stateMinDistance, distance)
+        }
+
+        // If this neighboring state is also very close, add it to the list
+        if (stateMinDistance <= thresholdMiles * 2) {
+          nearbyStates.push(stateName)
+        }
+      }
+    }
+
+    return {
+      isNear: minDistance <= thresholdMiles,
+      distance: minDistance,
+      nearbyStates: nearbyStates.slice(0, 3), // Limit to 3 nearby states
+    }
+  } catch (error) {
+    console.error('Error checking boundary proximity:', error)
+    return { isNear: false, distance: Infinity, nearbyStates: [] }
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const { speciesId, latitude, longitude, fishingMode, measuredLength } = await request.json()
@@ -68,6 +218,12 @@ export async function POST(request: NextRequest) {
         regulation: null,
       })
     }
+
+    // 2. Check boundary proximity
+    const boundaryCheck = checkBoundaryProximity(latitude, longitude, stateName)
+    const boundaryWarning = boundaryCheck.isNear
+      ? `⚠️ You are within ${boundaryCheck.distance.toFixed(2)} miles of the ${stateName} border${boundaryCheck.nearbyStates.length > 0 ? ` (near ${boundaryCheck.nearbyStates.join(', ')})` : ''}. Be aware that regulations may differ across state lines.`
+      : null
 
     // Get jurisdiction from database
     const { data: jurisdiction, error: jurisdictionError } = await supabase
@@ -138,6 +294,7 @@ export async function POST(request: NextRequest) {
         jurisdiction,
         regulations: [],
         speciesNotFound: true,
+        boundaryWarning,
       })
     }
 
@@ -145,6 +302,11 @@ export async function POST(request: NextRequest) {
     const regulation = regulations[0]
     const reasons: string[] = []
     let canKeep = true
+
+    // Add boundary warning to reasons if applicable
+    if (boundaryWarning) {
+      reasons.push(boundaryWarning)
+    }
 
     // Check size limits
     if (measuredLength) {
@@ -189,6 +351,7 @@ export async function POST(request: NextRequest) {
         can_keep: canKeep,
         reasons,
       }],
+      boundaryWarning,
     })
   } catch (error) {
     console.error('Legality check error:', error)

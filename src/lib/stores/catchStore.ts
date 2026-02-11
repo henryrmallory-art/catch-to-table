@@ -43,6 +43,7 @@ interface CatchState {
     regulation: any
     jurisdiction?: any
     regulations?: any[]
+    boundaryWarning?: string | null
   } | null
   setLegality: (result: any) => void
 
