@@ -84,9 +84,6 @@ export function SpeciesConfirm() {
       if (!proceed) {
         return
       }
-
-      // Store low confidence flag for later display
-      useCatchStore.getState().lowConfidenceWarning = true
     }
 
     confirmSpecies(suggestion.speciesId, suggestion.commonName)

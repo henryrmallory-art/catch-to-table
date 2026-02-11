@@ -1,0 +1,719 @@
+{
+  "metadata": {
+    "compiled_date": "2026-02-10",
+    "data_version": "1.0",
+    "sources": [
+      "Florida Fish and Wildlife Conservation Commission (FWC)",
+      "Texas Parks and Wildlife Department (TPWD)",
+      "California Department of Fish and Wildlife (CDFW)",
+      "North Carolina Wildlife Resources Commission & Division of Marine Fisheries",
+      "Louisiana Department of Wildlife and Fisheries (LDWF)",
+      "Alaska Department of Fish and Game (ADFG)",
+      "NOAA Fisheries"
+    ],
+    "notes": [
+      "Regulations are subject to change. Always verify with official state agencies before fishing.",
+      "Federal waters regulations may differ from state waters.",
+      "Some regulations vary by geographic sub-regions within states.",
+      "Emergency orders and proclamations may supersede published regulations."
+    ]
+  },
+  "states": [
+    {
+      "state_name": "Florida",
+      "state_abbreviation": "FL",
+      "coordinates": {
+        "latitude": 27.994402,
+        "longitude": -81.760254
+      },
+      "license_requirements": {
+        "freshwater": "Basic freshwater fishing license required for residents age 16+ and non-residents",
+        "saltwater": "Saltwater fishing license required for residents age 16+ and non-residents",
+        "notes": "State waters extend from shore to 3 miles in Atlantic, 9 miles in Gulf of Mexico"
+      },
+      "species": [
+        {
+          "common_name": "Red Snapper",
+          "scientific_name": "Lutjanus campechanus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 16,
+          "minimum_size_notes": "20 inches in Atlantic waters",
+          "maximum_size_inches": null,
+          "bag_limit_daily": 2,
+          "bag_limit_notes": "2 per person in Gulf state and federal waters; 1 per person in Atlantic federal waters",
+          "season_open": "Variable",
+          "season_closed": "Atlantic harvest currently closed; NOAA announces Atlantic season annually. Gulf season typically ~60 days starting in June",
+          "special_regulations": "Season dates announced annually; Atlantic season determined by NOAA",
+          "geographic_restrictions": "Different regulations for Gulf vs Atlantic waters",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State and federal waters"
+        },
+        {
+          "common_name": "Gag Grouper",
+          "scientific_name": "Mycteroperca microlepis",
+          "water_type": "saltwater",
+          "minimum_size_inches": 24,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "Within 3-grouper aggregate bag limit",
+          "season_open": "May 1",
+          "season_closed": "January 1 - April 30 (Atlantic)",
+          "special_regulations": "Zero bag limit for captain and crew of for-hire vessels in Gulf",
+          "geographic_restrictions": "Gulf vs Atlantic have different seasons",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State and federal waters"
+        },
+        {
+          "common_name": "Red Grouper",
+          "scientific_name": "Epinephelus morio",
+          "water_type": "saltwater",
+          "minimum_size_inches": 20,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 3,
+          "bag_limit_notes": "Within 3-grouper aggregate bag limit",
+          "season_open": "May 1",
+          "season_closed": "January 1 - April 30 (Atlantic federal waters)",
+          "special_regulations": "Zero bag limit for captain and crew of for-hire vessels in Gulf",
+          "geographic_restrictions": "Different closures for Atlantic federal waters",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State and federal waters"
+        },
+        {
+          "common_name": "Black Grouper",
+          "scientific_name": "Mycteroperca bonaci",
+          "water_type": "saltwater",
+          "minimum_size_inches": 24,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "Within 3-grouper aggregate bag limit",
+          "season_open": "May 1",
+          "season_closed": "December 31 (Atlantic); January 1 - April 30 (Atlantic federal waters)",
+          "special_regulations": "Zero bag limit for captain and crew of for-hire vessels in Gulf",
+          "geographic_restrictions": "Atlantic only",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State and federal waters"
+        },
+        {
+          "common_name": "Mahi-Mahi (Dolphinfish)",
+          "scientific_name": "Coryphaena hippurus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 20,
+          "minimum_size_notes": "Fork length in Atlantic; no minimum in Gulf",
+          "maximum_size_inches": null,
+          "bag_limit_daily": 5,
+          "bag_limit_notes": "5 per person, 30 per vessel in Atlantic state waters; higher limits may apply in Gulf",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Captain and crew bag limits prohibited statewide on for-hire vessels",
+          "geographic_restrictions": "Different size limits for Atlantic vs Gulf",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Spotted Seatrout",
+          "scientific_name": "Cynoscion nebulosus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 15,
+          "maximum_size_inches": null,
+          "bag_limit_daily": "Varies by region",
+          "bag_limit_notes": "Regional bag limits vary; possession of one fish over 19 inches allowed",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "One fish over 19 inches per vessel (or per person if shore fishing) included in bag limit",
+          "geographic_restrictions": "Regional variations throughout state",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Red Drum (Redfish)",
+          "scientific_name": "Sciaenops ocellatus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 18,
+          "maximum_size_inches": 27,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "Regional variations; catch-and-release only in Indian River Lagoon",
+          "season_open": "Year-round",
+          "season_closed": "Closed in Indian River Lagoon (catch-and-release only)",
+          "special_regulations": "Slot limit; harvest prohibited in Indian River Lagoon",
+          "geographic_restrictions": "Multiple management regions with different limits",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Largemouth Bass",
+          "scientific_name": "Micropterus salmoides",
+          "water_type": "freshwater",
+          "minimum_size_inches": null,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 5,
+          "bag_limit_notes": "5 black bass total (all Micropterus species combined), only 1 may be 16 inches or longer",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "TrophyCatch program allows temporary possession over limits for documentation. State record submissions allowed.",
+          "geographic_restrictions": "Special regulations on some water bodies",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Striped Bass",
+          "scientific_name": "Morone saxatilis",
+          "water_type": "freshwater",
+          "minimum_size_inches": 18,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 3,
+          "bag_limit_notes": "Applies to Suwannee River system",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Specific to Suwannee River system",
+          "geographic_restrictions": "Suwannee River system only",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Bluefish",
+          "scientific_name": "Pomatomus saltatrix",
+          "water_type": "saltwater",
+          "minimum_size_inches": null,
+          "maximum_size_inches": null,
+          "bag_limit_daily": "No specific limit noted",
+          "bag_limit_notes": "Subject to Atlantic-wide management",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Atlantic States Marine Fisheries Commission coordination",
+          "geographic_restrictions": "Atlantic coast",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State and federal waters"
+        },
+        {
+          "common_name": "Flounder (Southern/Summer)",
+          "scientific_name": "Paralichthys spp.",
+          "water_type": "saltwater",
+          "minimum_size_inches": "Varies by species and region",
+          "maximum_size_inches": null,
+          "bag_limit_daily": "Varies by region",
+          "bag_limit_notes": "Check FWC regulations for specific limits",
+          "season_open": "Variable",
+          "season_closed": "Variable",
+          "special_regulations": "Species-specific regulations apply",
+          "geographic_restrictions": "Regional variations",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        }
+      ]
+    },
+    {
+      "state_name": "Texas",
+      "state_abbreviation": "TX",
+      "coordinates": {
+        "latitude": 31.968599,
+        "longitude": -99.901813
+      },
+      "license_requirements": {
+        "freshwater": "Fishing license required for age 17+",
+        "saltwater": "Saltwater fishing license required for age 17+ in saltwater",
+        "notes": "Regulations valid September 1, 2025 through August 31, 2026. Possession limit equals double the bag limit unless otherwise noted."
+      },
+      "species": [
+        {
+          "common_name": "Red Snapper",
+          "scientific_name": "Lutjanus campechanus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 15,
+          "minimum_size_notes": "15 inches in state waters; 16 inches in federal waters when open",
+          "maximum_size_inches": null,
+          "bag_limit_daily": 4,
+          "bag_limit_notes": "4 per person in state waters year-round; 2 per person in federal waters when open",
+          "season_open": "Year-round in state waters; May 22 in federal waters",
+          "season_closed": "Federal waters closed January 1 - May 21, 2026",
+          "special_regulations": "Circle hooks required. Federal season may close if quota reached.",
+          "geographic_restrictions": "State waters (0-9 nautical miles) vs federal waters",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State and federal waters"
+        },
+        {
+          "common_name": "Spotted Seatrout (Speckled Trout)",
+          "scientific_name": "Cynoscion nebulosus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 15,
+          "maximum_size_inches": 20,
+          "bag_limit_daily": 3,
+          "bag_limit_notes": "3 per day within slot limit. One oversized fish (28+ inches) allowed with special tag per license year.",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Slot limit: 15-20 inches. Oversized Spotted Seatrout Tag and Bonus Tag system for fish over 28 inches.",
+          "geographic_restrictions": "Statewide",
+          "effective_dates": "Effective March 2024, continuing through 2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Largemouth Bass",
+          "scientific_name": "Micropterus salmoides",
+          "water_type": "freshwater",
+          "minimum_size_inches": 14,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 5,
+          "bag_limit_notes": "5 fish combined of largemouth, smallmouth, Alabama, Guadalupe, and spotted bass",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Some water bodies have different regulations (check Exceptions to Statewide Regulations)",
+          "geographic_restrictions": "Statewide with exceptions on specific water bodies",
+          "effective_dates": "2026",
+          "water_jurisdiction": "Public fresh waters"
+        },
+        {
+          "common_name": "Smallmouth Bass",
+          "scientific_name": "Micropterus dolomieu",
+          "water_type": "freshwater",
+          "minimum_size_inches": 14,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 5,
+          "bag_limit_notes": "5 fish combined of largemouth, smallmouth, Alabama, Guadalupe, and spotted bass",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Combined bag limit with other black bass species",
+          "geographic_restrictions": "Statewide",
+          "effective_dates": "2026",
+          "water_jurisdiction": "Public fresh waters"
+        }
+      ]
+    },
+    {
+      "state_name": "California",
+      "state_abbreviation": "CA",
+      "coordinates": {
+        "latitude": 36.778259,
+        "longitude": -119.417931
+      },
+      "license_requirements": {
+        "freshwater": "Sport fishing license required for age 16+",
+        "saltwater": "Sport fishing license required for age 16+ for ocean fishing",
+        "notes": "Steelhead Report Card ($10.29) required for steelhead in anadromous waters. North Coast Salmon Report Card ($9.21) required for salmon in Klamath, Trinity, and Smith rivers."
+      },
+      "species": [
+        {
+          "common_name": "Rockfish (General)",
+          "scientific_name": "Sebastes spp.",
+          "water_type": "saltwater",
+          "minimum_size_inches": null,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 10,
+          "bag_limit_notes": "10 total Rockfish, Cabezon, and Greenling in aggregate. 2-fish sub-bag limit for Canary Rockfish.",
+          "season_open": "April 1",
+          "season_closed": "January 1 - March 31 (for boat-based anglers)",
+          "special_regulations": "Bronzespotted, Cowcod, Quillback, and Yelloweye Rockfish may not be taken or possessed at any time. Always check for in-season changes.",
+          "geographic_restrictions": "Varies by management area",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Trout (General)",
+          "scientific_name": "Oncorhynchus spp., Salmo spp.",
+          "water_type": "freshwater",
+          "minimum_size_inches": 12,
+          "minimum_size_notes": "Varies by water body; 12 inches for most lakes and Delta",
+          "maximum_size_inches": null,
+          "bag_limit_daily": 5,
+          "bag_limit_notes": "Possession limit of 10",
+          "season_open": "Year-round for lakes and reservoirs; April 25 for streams/rivers",
+          "season_closed": "November 15 for streams and rivers",
+          "special_regulations": "Specific regulations vary by water body. Check special regulations for location.",
+          "geographic_restrictions": "Different seasons for lakes/reservoirs vs streams/rivers",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Steelhead",
+          "scientific_name": "Oncorhynchus mykiss",
+          "water_type": "anadromous",
+          "minimum_size_inches": 16,
+          "maximum_size_inches": null,
+          "bag_limit_daily": "Varies by water body",
+          "bag_limit_notes": "Steelhead Report Card required. Only hatchery steelhead (adipose fin clipped) may be retained in many waters; wild steelhead must be released.",
+          "season_open": "Varies by water body",
+          "season_closed": "Varies by water body",
+          "special_regulations": "Steelhead defined as rainbow trout >16 inches in anadromous waters. Wild fish (intact adipose fin) must be released in many areas.",
+          "geographic_restrictions": "Specific regulations for each anadromous water system",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Salmon (General)",
+          "scientific_name": "Oncorhynchus spp.",
+          "water_type": "anadromous/saltwater",
+          "minimum_size_inches": "Varies by species and location",
+          "maximum_size_inches": null,
+          "bag_limit_daily": "Varies by species and location",
+          "bag_limit_notes": "North Coast Salmon Report Card required for Klamath, Trinity, Smith rivers. Ocean salmon seasons announced annually in April.",
+          "season_open": "Variable by species and location",
+          "season_closed": "Variable by species and location",
+          "special_regulations": "Specific season dates and harvest guidelines released annually after population assessments",
+          "geographic_restrictions": "Different regulations for ocean vs river systems",
+          "effective_dates": "2026 seasons to be announced",
+          "water_jurisdiction": "State and federal waters"
+        },
+        {
+          "common_name": "Largemouth Bass",
+          "scientific_name": "Micropterus salmoides",
+          "water_type": "freshwater",
+          "minimum_size_inches": 12,
+          "minimum_size_notes": "Varies by water body",
+          "maximum_size_inches": null,
+          "bag_limit_daily": 5,
+          "bag_limit_notes": "Statewide daily bag limit; check for specific water body exceptions",
+          "season_open": "Generally year-round",
+          "season_closed": "Some waters may have closures",
+          "special_regulations": "Check specific regulations for each water body",
+          "geographic_restrictions": "Varies by water body",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        }
+      ]
+    },
+    {
+      "state_name": "North Carolina",
+      "state_abbreviation": "NC",
+      "coordinates": {
+        "latitude": 35.782169,
+        "longitude": -80.793457
+      },
+      "license_requirements": {
+        "freshwater": "Inland fishing license required for age 16+",
+        "saltwater": "Coastal recreational fishing license required for age 16+",
+        "notes": "Coastal regulations effective January 26, 2026. Inland regulations effective August 1, 2025 to July 31, 2026. Size and creel limits in inland waters match adjacent coastal/joint waters."
+      },
+      "species": [
+        {
+          "common_name": "Striped Bass",
+          "scientific_name": "Morone saxatilis",
+          "water_type": "saltwater/anadromous",
+          "minimum_size_inches": 28,
+          "minimum_size_notes": "Atlantic Ocean: 28-31 inch slot limit. Inland: 18 inch minimum.",
+          "maximum_size_inches": 31,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "1 per person per day in Atlantic Ocean. Closed in Albemarle Sound and Central Southern Management Areas.",
+          "season_open": "Year-round in Atlantic Ocean; May 1 in some inland areas",
+          "season_closed": "May 1 - September 30 in Albemarle Sound Striped Bass Management Area joint waters. Closed in Albemarle Sound and Central Southern Management Areas.",
+          "special_regulations": "Harvest slot limit in Atlantic. Gigging, spearing, or gaffing prohibited. Closed in multiple management areas.",
+          "geographic_restrictions": "Multiple management areas with different regulations",
+          "effective_dates": "January 26, 2026",
+          "water_jurisdiction": "Coastal, joint, and inland waters"
+        },
+        {
+          "common_name": "Bluefish",
+          "scientific_name": "Pomatomus saltatrix",
+          "water_type": "saltwater",
+          "minimum_size_inches": null,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 5,
+          "bag_limit_notes": "5 fish for private anglers; 7 fish for for-hire anglers",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Bag limit increase effective January 1, 2026 based on improved stock assessment",
+          "geographic_restrictions": "Coastal fishing waters and joint fishing waters",
+          "effective_dates": "January 1, 2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Summer Flounder",
+          "scientific_name": "Paralichthys dentatus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 15,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "1 per person per day during open season",
+          "season_open": "May 15; October 10",
+          "season_closed": "September 30; December 31 (open May 15-Sept 30 & Oct 10-Dec 31)",
+          "special_regulations": "Two separate open seasons. Internal Coastal and Joint Fishing Waters.",
+          "geographic_restrictions": "Internal Coastal and Joint Fishing Waters",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Southern Flounder",
+          "scientific_name": "Paralichthys lethostigma",
+          "water_type": "saltwater",
+          "minimum_size_inches": 15,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "1 per person per day during brief open season",
+          "season_open": "September 1",
+          "season_closed": "September 14 (2025 season; check for 2026 updates)",
+          "special_regulations": "Very limited season. Harvest must be reported at deq.nc.gov/report-my-fish (effective December 1, 2025)",
+          "geographic_restrictions": "Internal Coastal and Joint Fishing Waters",
+          "effective_dates": "2025/2026",
+          "water_jurisdiction": "State waters"
+        }
+      ]
+    },
+    {
+      "state_name": "Louisiana",
+      "state_abbreviation": "LA",
+      "coordinates": {
+        "latitude": 30.984298,
+        "longitude": -91.962333
+      },
+      "license_requirements": {
+        "freshwater": "Basic Fishing License required for age 18+ for freshwater species",
+        "saltwater": "Saltwater License required for age 18+ for areas south of saltwater line",
+        "notes": "Both licenses may be required depending on location. Contact LDWF at 225-765-2898 for specific requirements."
+      },
+      "species": [
+        {
+          "common_name": "Spotted Seatrout (Speckled Trout)",
+          "scientific_name": "Cynoscion nebulosus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 13,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 15,
+          "bag_limit_notes": "15 per person; no more than 2 fish over 25 inches can be retained. New regulations (13-20 inch slot, 2 over 20 inches) effective November 20.",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Size and bag limit changes went into effect November 20. Only 2 fish over 25 inches (or 20 inches under new rules) allowed.",
+          "geographic_restrictions": "Statewide in saltwater",
+          "effective_dates": "Current regulations; new regulations effective November 20, 2025",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Red Drum (Redfish)",
+          "scientific_name": "Sciaenops ocellatus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 16,
+          "maximum_size_inches": 27,
+          "bag_limit_daily": 4,
+          "bag_limit_notes": "4 fish per person within slot limit",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Slot limit: 16-27 inches total length. Retention over maximum prohibited.",
+          "geographic_restrictions": "South of Louisiana saltwater line",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        }
+      ]
+    },
+    {
+      "state_name": "Alaska",
+      "state_abbreviation": "AK",
+      "coordinates": {
+        "latitude": 63.588753,
+        "longitude": -154.493062
+      },
+      "license_requirements": {
+        "freshwater": "Sport fishing license required for age 16+",
+        "saltwater": "Sport fishing license required for age 16+",
+        "notes": "Regulations vary significantly by drainage and management area. Emergency Orders (EOs) supersede published regulations - check before fishing."
+      },
+      "species": [
+        {
+          "common_name": "King Salmon (Chinook)",
+          "scientific_name": "Oncorhynchus tshawytscha",
+          "water_type": "anadromous",
+          "minimum_size_inches": 28,
+          "minimum_size_notes": "Southeast Alaska and Yakutat region",
+          "maximum_size_inches": null,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "1 per day for residents (Southeast/Yakutat). Limits vary by region and residency.",
+          "season_open": "April 3, 2025",
+          "season_closed": "April 30, 2026",
+          "special_regulations": "Specific to Southeast Alaska and Yakutat. Check area-specific regulations.",
+          "geographic_restrictions": "Regulations vary significantly by region and drainage",
+          "effective_dates": "April 3, 2025 - April 30, 2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Salmon (General - Coho, Sockeye, Pink, Chum)",
+          "scientific_name": "Oncorhynchus spp.",
+          "water_type": "anadromous",
+          "minimum_size_inches": "Varies by species and location",
+          "maximum_size_inches": null,
+          "bag_limit_daily": 6,
+          "bag_limit_notes": "General limit; varies by species, location, and residency status",
+          "season_open": "Varies by drainage and species",
+          "season_closed": "Varies by drainage and species",
+          "special_regulations": "Each drainage has specific regulations. Emergency Orders frequently issued.",
+          "geographic_restrictions": "Highly variable by region",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Pacific Halibut",
+          "scientific_name": "Hippoglossus stenolepis",
+          "water_type": "saltwater",
+          "minimum_size_inches": null,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "Nonresidents: 1 daily; varies by charter vs unguided. Charter vessels in Homer: 2 daily (1 any size, 1 under 27 inches).",
+          "season_open": "Variable by area",
+          "season_closed": "Variable by area",
+          "special_regulations": "International Pacific Halibut Commission (IPHC) regulations. Daily limits remained same for 2026 unguided sectors.",
+          "geographic_restrictions": "Limits vary by management unit (e.g., Homer has different charter limits)",
+          "effective_dates": "2026",
+          "water_jurisdiction": "Federal/International waters"
+        },
+        {
+          "common_name": "Rockfish",
+          "scientific_name": "Sebastes spp.",
+          "water_type": "saltwater",
+          "minimum_size_inches": null,
+          "maximum_size_inches": null,
+          "bag_limit_daily": 6,
+          "bag_limit_notes": "Nonresidents: 6 per day. Pelagic rockfish in Southeast: 5 daily, 10 possession in some areas.",
+          "season_open": "Year-round",
+          "season_closed": null,
+          "special_regulations": "Pelagic rockfish regulations vary by area (Petersburg, Wrangell, Kake areas)",
+          "geographic_restrictions": "Regional variations",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        },
+        {
+          "common_name": "Lingcod",
+          "scientific_name": "Ophiodon elongatus",
+          "water_type": "saltwater",
+          "minimum_size_inches": 30,
+          "minimum_size_notes": "30-35 inches OR 55+ inches",
+          "maximum_size_inches": 35,
+          "bag_limit_daily": 1,
+          "bag_limit_notes": "1 per day, 1 in possession. Annual limit: 2 fish (1 at 30-35 inches, 1 at 55+ inches).",
+          "season_open": "Variable",
+          "season_closed": "Variable",
+          "special_regulations": "Slot limit with option for one trophy fish. Annual limit of 2 fish with size requirements.",
+          "geographic_restrictions": "Statewide",
+          "effective_dates": "2026",
+          "water_jurisdiction": "State waters"
+        }
+      ]
+    }
+  ],
+  "multi_state_federal_species": [
+    {
+      "common_name": "Blue Marlin",
+      "scientific_name": "Makaira nigricans",
+      "water_type": "saltwater",
+      "minimum_size_inches": 99,
+      "minimum_size_notes": "Lower-jaw fork length in federal waters",
+      "maximum_size_inches": null,
+      "bag_limit_daily": null,
+      "bag_limit_notes": "No daily limit, but 250 fish per vessel per year combined for blue marlin, white marlin, and roundscale spearfish",
+      "season_open": "Year-round",
+      "season_closed": null,
+      "special_regulations": "HMS Angling or HMS Charterboat/Headboat permit required. Cannot retain if hammerhead or oceanic whitetip shark on board.",
+      "geographic_restrictions": "Atlantic Ocean and Gulf of Mexico federal waters",
+      "effective_dates": "2026",
+      "water_jurisdiction": "Federal waters",
+      "managing_agency": "NOAA Fisheries"
+    },
+    {
+      "common_name": "White Marlin",
+      "scientific_name": "Kajikia albida",
+      "water_type": "saltwater",
+      "minimum_size_inches": 66,
+      "minimum_size_notes": "Lower-jaw fork length",
+      "maximum_size_inches": null,
+      "bag_limit_daily": null,
+      "bag_limit_notes": "No daily limit, but 250 fish per vessel per year combined with blue marlin and roundscale spearfish",
+      "season_open": "Year-round",
+      "season_closed": null,
+      "special_regulations": "HMS permit required. Cannot retain if hammerhead or oceanic whitetip shark on board.",
+      "geographic_restrictions": "Atlantic Ocean and Gulf of Mexico federal waters",
+      "effective_dates": "2026",
+      "water_jurisdiction": "Federal waters",
+      "managing_agency": "NOAA Fisheries"
+    },
+    {
+      "common_name": "Sailfish",
+      "scientific_name": "Istiophorus platypterus",
+      "water_type": "saltwater",
+      "minimum_size_inches": 63,
+      "minimum_size_notes": "Lower-jaw fork length",
+      "maximum_size_inches": null,
+      "bag_limit_daily": null,
+      "bag_limit_notes": "No daily bag limit specified",
+      "season_open": "Year-round",
+      "season_closed": null,
+      "special_regulations": "HMS permit required. Cannot retain if hammerhead or oceanic whitetip shark on board.",
+      "geographic_restrictions": "Atlantic Ocean and Gulf of Mexico federal waters",
+      "effective_dates": "2026",
+      "water_jurisdiction": "Federal waters",
+      "managing_agency": "NOAA Fisheries"
+    },
+    {
+      "common_name": "Yellowfin Tuna",
+      "scientific_name": "Thunnus albacares",
+      "water_type": "saltwater",
+      "minimum_size_inches": 27,
+      "minimum_size_notes": "Curved fork length",
+      "maximum_size_inches": null,
+      "bag_limit_daily": 3,
+      "bag_limit_notes": "3 per angler per day or trip",
+      "season_open": "Year-round",
+      "season_closed": null,
+      "special_regulations": "HMS permit required. Must be landed with tail and one pectoral fin attached.",
+      "geographic_restrictions": "Atlantic Ocean and Gulf of Mexico federal waters",
+      "effective_dates": "2026",
+      "water_jurisdiction": "Federal waters",
+      "managing_agency": "NOAA Fisheries"
+    },
+    {
+      "common_name": "Blackfin Tuna",
+      "scientific_name": "Thunnus atlanticus",
+      "water_type": "saltwater",
+      "minimum_size_inches": null,
+      "maximum_size_inches": null,
+      "bag_limit_daily": null,
+      "bag_limit_notes": "No specific federal limit noted",
+      "season_open": "Year-round",
+      "season_closed": null,
+      "special_regulations": "Does not require HMS permit (unlike other HMS species)",
+      "geographic_restrictions": "Atlantic Ocean and Gulf of Mexico",
+      "effective_dates": "2026",
+      "water_jurisdiction": "Federal waters",
+      "managing_agency": "NOAA Fisheries"
+    },
+    {
+      "common_name": "Walleye",
+      "scientific_name": "Sander vitreus",
+      "water_type": "freshwater",
+      "minimum_size_inches": 15,
+      "minimum_size_notes": "Varies significantly by state and water body. 15 inches in Michigan Lake Erie.",
+      "maximum_size_inches": null,
+      "bag_limit_daily": 6,
+      "bag_limit_notes": "Varies by state and water body. Michigan Lake Erie: 6 through April 30, 2026. Wisconsin: 5 total daily with ability to fish two bodies of water with 3-fish limits.",
+      "season_open": "Variable by state and water body",
+      "season_closed": "Variable by state and water body",
+      "special_regulations": "Great Lakes states have widely varying regulations including slot limits. Check specific state and water body regulations.",
+      "geographic_restrictions": "Regulations vary dramatically between states and individual lakes",
+      "effective_dates": "2026",
+      "water_jurisdiction": "State waters",
+      "managing_agency": "State agencies"
+    }
+  ],
+  "additional_notes": {
+    "data_gaps": [
+      "Not all 50 states + DC + territories were researched due to time constraints",
+      "Scientific names not available for all species",
+      "Some states have complex regional variations not fully captured",
+      "Seasonal dates may be announced closer to season start",
+      "Federal waters regulations (3-200 miles offshore) may differ from state waters",
+      "Some freshwater species (catfish, crappie, pike) have limited data"
+    ],
+    "recommendations": [
+      "Always verify current regulations before fishing",
+      "Check for emergency orders and proclamations",
+      "Download state-specific fishing apps (Fish Rules, state agency apps)",
+      "Consider charter/for-hire vs private angler differences",
+      "Be aware of protected species and no-take zones",
+      "Understand proper measurement techniques (total length vs fork length)",
+      "Know the difference between bag limits, possession limits, and vessel limits"
+    ],
+    "next_steps": [
+      "Add remaining 44 states + DC + territories (Puerto Rico, US Virgin Islands, Guam, American Samoa, Northern Mariana Islands)",
+      "Add more freshwater species (catfish species, crappie, pike, muskie, panfish)",
+      "Add more saltwater species by region",
+      "Include protected species and catch-and-release only species",
+      "Add information about fishing methods restrictions",
+      "Include tournament exemptions where applicable",
+      "Add contact information for each state agency",
+      "Include links to official regulation documents",
+      "Add information about federal waters (EEZ) vs state waters boundaries"
+    ]
+  }
+}
