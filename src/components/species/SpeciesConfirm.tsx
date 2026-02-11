@@ -12,6 +12,8 @@ export function SpeciesConfirm() {
   const {
     photoBase64,
     photoUrl,
+    latitude,
+    longitude,
     speciesSuggestions,
     setSuggestions,
     confirmSpecies,
@@ -37,11 +39,16 @@ export function SpeciesConfirm() {
 
     try {
       console.log('Sending identification request, image length:', photoBase64.length)
+      console.log('Location for fish ID:', latitude, longitude)
 
       const response = await fetch('/api/identify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ imageBase64: photoBase64 }),
+        body: JSON.stringify({
+          imageBase64: photoBase64,
+          latitude,
+          longitude
+        }),
       })
 
       console.log('Response status:', response.status)
