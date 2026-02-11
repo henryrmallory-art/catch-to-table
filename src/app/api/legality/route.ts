@@ -92,12 +92,52 @@ export async function POST(request: NextRequest) {
       .eq('species_id', speciesId)
       .eq('jurisdiction_id', jurisdiction.id)
 
+    // Get species info to show helpful message
+    const { data: speciesInfo } = await supabase
+      .from('species')
+      .select('common_name, water_type')
+      .eq('id', speciesId)
+      .single()
+
     if (regError || !regulations || regulations.length === 0) {
+      // Determine if this species just isn't found in this location
+      const speciesName = speciesInfo?.common_name || 'this species'
+      const waterType = speciesInfo?.water_type
+
+      // Landlocked states (no ocean access)
+      const landlocked = ['Vermont', 'West Virginia', 'Kentucky', 'Tennessee', 'Arkansas',
+                          'Oklahoma', 'Montana', 'Wyoming', 'Colorado', 'Utah', 'Idaho',
+                          'Nevada', 'New Mexico', 'Arizona', 'North Dakota', 'South Dakota',
+                          'Nebraska', 'Kansas', 'Iowa', 'Missouri', 'Ohio', 'Indiana', 'Illinois',
+                          'Wisconsin', 'Minnesota', 'Michigan', 'Pennsylvania']
+
+      const isLandlocked = landlocked.includes(stateName)
+      const isSaltwater = waterType === 'saltwater'
+
+      let reason = `No regulation data found for ${speciesName} in ${stateName}.`
+
+      if (isLandlocked && isSaltwater) {
+        reason = `⚠️ ${speciesName} is not found in ${stateName}. This is a saltwater species, and ${stateName} is landlocked. Please verify your identification or location.`
+      } else {
+        // Check if species exists in ANY state
+        const { count: totalCount } = await supabase
+          .from('regulations')
+          .select('*', { count: 'exact', head: true })
+          .eq('species_id', speciesId)
+
+        if (totalCount === 0) {
+          reason = `${speciesName} regulations are not yet in our database.`
+        } else {
+          reason = `⚠️ ${speciesName} is not typically found in ${stateName} waters. Please verify your identification.`
+        }
+      }
+
       return NextResponse.json({
         canKeep: false,
-        reasons: [`No regulation data found for this species in ${stateName}.`],
+        reasons: [reason],
         jurisdiction,
         regulations: [],
+        speciesNotFound: true,
       })
     }
 
